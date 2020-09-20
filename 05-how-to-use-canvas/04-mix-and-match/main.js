@@ -88,7 +88,7 @@ let main = () => {
     let aux = () => {
       let selectedMove =
         queuedMoves.length === 0 ? "idle" : queuedMoves.shift();
-      console.log(selectedMove);
+
       animate(ctx, images, selectedMove).then(aux);
     };
 
@@ -97,6 +97,11 @@ let main = () => {
 
   document.getElementById("kick").onclick = () => queuedMoves.push("kick");
   document.getElementById("punch").onclick = () => queuedMoves.push("punch");
+
+  document.onkeyup = (event) => {
+    if (event.key === "ArrowLeft") queuedMoves.push("kick");
+    else if (event.key === "ArrowRight") queuedMoves.push("punch");
+  };
 };
 
 main();
