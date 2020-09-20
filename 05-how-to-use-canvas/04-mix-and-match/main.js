@@ -50,7 +50,7 @@ let loadMoves = (moves) => {
   let promises = Object.keys(moves)
     .map((moveName) => {
       return moves[moveName].map((imagePath, index) => {
-        return loadImage(moveName, "/images/" + imagePath, index);
+        return loadImage(moveName, index, "/images/" + imagePath);
       });
     })
     .flat();
@@ -68,7 +68,7 @@ let loadMoves = (moves) => {
 };
 
 // Given a path, it returns the promise of a loaded image.
-let loadImage = (moveName, path, index) => {
+let loadImage = (moveName, index, path) => {
   return new Promise((resolve) => {
     let image = new Image();
     image.onload = () => resolve([moveName, index, image]);
@@ -77,7 +77,7 @@ let loadImage = (moveName, path, index) => {
 };
 
 let main = () => {
-  let nextMove = "idle";
+  let queuedMoves = [];
   let canvas = document.getElementById("canvas");
   let ctx = canvas.getContext("2d");
 
@@ -86,15 +86,18 @@ let main = () => {
 
   loadMoves(moveFiles).then((images) => {
     let aux = () => {
-      animate(ctx, images, nextMove).then(aux);
+      let selectedMove =
+        queuedMoves.length === 0 ? "idle" : queuedMoves.shift();
+      console.log(selectedMove);
+      animate(ctx, images, selectedMove).then(aux);
     };
 
     aux();
   });
 
-  document.getElementById("kick").onclick = () => (nextMove = "kick");
-  document.getElementById("punch").onclick = () => (nextMove = "punch");
-  document.getElementById("idle").onclick = () => (nextMove = "idle");
+  document.getElementById("kick").onclick = () => queuedMoves.push("kick");
+  document.getElementById("punch").onclick = () => queuedMoves.push("punch");
+  document.getElementById("idle").onclick = () => queuedMoves.push("idle");
 };
 
 main();
