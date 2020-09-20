@@ -97,7 +97,6 @@ let main = () => {
 
   document.getElementById("kick").onclick = () => queuedMoves.push("kick");
   document.getElementById("punch").onclick = () => queuedMoves.push("punch");
-  document.getElementById("idle").onclick = () => queuedMoves.push("idle");
 };
 
 main();
