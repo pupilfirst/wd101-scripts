@@ -59,7 +59,10 @@ let loadMoves = (moves) => {
     let loadedMoves = { kick: [], punch: [], idle: [] };
 
     values.forEach((loadedValue) => {
-      let [moveName, index, image] = loadedValue;
+      let moveName = loadedValue[0];
+      let index = loadedValue[1];
+      let image = loadedValue[2];
+
       loadedMoves[moveName][index] = image;
     });
 
@@ -86,8 +89,13 @@ let main = () => {
 
   loadMoves(moveFiles).then((images) => {
     let aux = () => {
-      let selectedMove =
-        queuedMoves.length === 0 ? "idle" : queuedMoves.shift();
+      let selectedMove;
+
+      if (queuedMoves.length === 0) {
+        selectedMove = "idle";
+      } else {
+        selectedMove = queuedMoves.shift();
+      }
 
       animate(ctx, images, selectedMove).then(aux);
     };
