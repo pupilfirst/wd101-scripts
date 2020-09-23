@@ -1,5 +1,4 @@
-> **Concept being taught:** Use the right tool for the job.
-> **Target title:** Beyond the DOM.
+> **Target title:** First steps with Canvas
 
 # Script
 
