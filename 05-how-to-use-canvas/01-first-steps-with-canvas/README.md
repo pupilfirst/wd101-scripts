@@ -5,24 +5,16 @@
 So far in this course, every time you've written some line of code, to make something appear in the browser window, you have been using an interface known as the Document, Object, Model - abbrieviated to D.O.M, and usually just called the _DOM_.
 
 ```html
-<html>
-  <head>
-    <script type="text/javascript" src="/main.js"></script>
-  </head>
+<p>Hello World</p>
 
-  <body>
-    <p>Hello World</p>
-  </body>
-</html>
+<script type="text/javascript" src="/main.js"></script>
 ```
 
 However, the DOM isn't the only way available to you, as a developer, to get the browser to show things on-screen. With the DOM, you're describing what the user sees by writing a collection of tags, and then styling it:
 
 ```html
-<body>
-  <p>Hello World</p>
-  <p style="color: red">A second line</p>
-</body>
+<p>Hello World</p>
+<p style="color: red">A second line</p>
 ```
 
 It's basically a description of what the browser should show the user.
@@ -30,9 +22,9 @@ It's basically a description of what the browser should show the user.
 The `<canvas>` element works a bit differently. It's also a tag, and just like any other tag, you start by placing the `<canvas>` tag in your HTML file.
 
 ```html
-<body>
-  <canvas></canvas>
-</body>
+<canvas></canvas>
+
+<script type="text/javascript" src="/main.js"></script>
 ```
 
 This is where the differences start. Just like a physical canvas that you would use to draw on, a canvas also has a width a height. We need to specify that so that the browser knows what it's dimension are.
@@ -41,7 +33,7 @@ This is where the differences start. Just like a physical canvas that you would 
 <canvas width="500" height="500"></canvas>
 ```
 
-Now if had a physical canvas, and I told you to draw a line on it with a pen, what you would probably do is pick up the pen, place it at a starting point on the canvas, and then draw a line to some end-point. Drawing within the canvas works just like that - drawing is a series of steps, and we need to use Javascript to execute those steps.
+Now if you had a physical canvas, and I told you to draw a line on it with a pen, what you would probably do is pick up the pen, place it at a starting point on the canvas, and then draw a line to some end-point. Drawing within the canvas works just like that - drawing is a series of steps, and we need to use Javascript to execute those steps.
 
 Let's try and draw a line on the canvas.
 
@@ -171,6 +163,7 @@ And yes, that works.
 With what we know now, drawing a stick figure it just a matter of knowing the starting points and ending points of the line. For example, let's modify the first line so that it forms the body of the stick figure:
 
 ```js
+// Body
 ctx.beginPath();
 ctx.moveTo(250, 150);
 ctx.lineTo(250, 350);
@@ -211,6 +204,62 @@ ctx.stroke();
 
 > Switch to browser and refresh.
 
-Aaand we have our stick figure. Go ahead and play around with the `<canvas>` element - you can do a lot more than just draw circles and lines - think of a shape you want to draw and try searching for `canvas draw SHAPE` and try reading the documentation and following the instructions.
+Aaand we have our stick figure.
+
+Before we wrap up, there's _one more thing_ that I want to do.
+
+> Switch to editor.
+
+As a programmer, one of the things we like to do is keep things tidy. When I look at this Javascript code, I can see there's a lot of repetition in these lines.
+
+> Highlight the line drawing code.
+
+Let's clean that up with by converting that line drawing part into a function. When we look at it, we can see that a function that does the same thing would need to take at least all of the properties that are changing between these five lines. Specifically, those are the X & Y co-ordinates for the starting point of the line, and the co-ordinates for the ending point of the line.
+
+I'm going to write a function that takes those values as an argument:
+
+```javascript
+let drawLine = (startX, startY, endX, endY) => {};
+```
+
+What do we do in this function? Well, just what we did outside... except we use the arguments instead of typing in the values. I'll start by copying and pasting one of these blocks...
+
+```javascript
+let drawLine = (startX, startY, endX, endY) => {
+  ctx.beginPath();
+  ctx.moveTo(250, 350);
+  ctx.lineTo(275, 450);
+  ctx.stroke();
+};
+```
+
+...and then replacing the values with the function's arguments.
+
+```javascript
+let drawLine = (startX, startY, endX, endY) => {
+  ctx.beginPath();
+  ctx.moveTo(startX, startY);
+  ctx.lineTo(endX, endY);
+  ctx.stroke();
+};
+```
+
+Now that we have a nice function, we can replace these sets of command [HIGHLIGHT LINE DRAWING COMAMANDS] with one function call each:
+
+```javascript
+drawLine(250, 150, 250, 350); // Main body
+drawLine(250, 200, 150, 150); // Right Arm
+drawLine(250, 200, 350, 150); // Left Arm
+drawLine(250, 350, 225, 450); // Right Leg
+drawLine(250, 350, 275, 450); // Left Leg
+```
+
+> Switch to browser and reload.
+
+There, it still looks the same, but the code is now much neater.
+
+That's actually it for this lesson.
+
+Go ahead and play around with the `<canvas>` element - you can do a lot more than just draw circles and lines - think of a shape you want to draw and try searching for `canvas draw SHAPE` and try reading the documentation and following the instructions.
 
 Have fun! See you in the next lesson!
