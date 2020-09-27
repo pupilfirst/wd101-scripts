@@ -214,7 +214,7 @@ As a programmer, one of the things we like to do is keep things tidy. When I loo
 
 > Highlight the line drawing code.
 
-Let's clean that up with by converting that line drawing part into a function. When we look at it, we can see that a function that does the same thing would need to take at least all of the properties that are changing between these five lines. Specifically, those are the X & Y co-ordinates for the starting point of the line, and the co-ordinates for the ending point of the line.
+Let's clean that up with by converting that line drawing part into a function. When we look at it, we can see that a function that does the same thing would need to take at least all of the properties that are changing between these five blocks of code. Specifically, those are the X & Y co-ordinates for the starting point of the line, and the co-ordinates for the ending point of the line.
 
 I'm going to write a function that takes those values as an argument:
 
