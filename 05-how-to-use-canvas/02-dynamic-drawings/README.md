@@ -1,6 +1,6 @@
 > **Target title:** Dynamic drawings
 
-# Dynamic Drawings
+# Script
 
 > Author's Note: Talk about how things drawn on a canvas need not be static, and how things drawn on a canvas can _change_.
 >
