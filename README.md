@@ -1,9 +1,9 @@
-# Targets
+## Level 5
 
-1. [Introduction](./00-intro)
-2. [First Steps with Canvas](./01-first-steps-with-canvas)
-3. [Dynamic Drawings](./02-dynami-drawings)
-4. [Loading External Images](./03-loading-external-images)
-5. [Promises vs. Callbacks](./04-promises-vs-callbacks)
-6. [Animating with Images](./05-animating-with-images)
-7. [Interactive Animations](./06-interactive-animations) **[TODO]**
+1. [Introduction](./05-how-to-use-canvas/00-intro)
+2. [First Steps with Canvas](./05-how-to-use-canvas/01-first-steps-with-canvas)
+3. [Dynamic Drawings](./05-how-to-use-canvas/02-dynami-drawings)
+4. [Loading External Images](./05-how-to-use-canvas/03-loading-external-images)
+5. [Promises vs. Callbacks](./05-how-to-use-canvas/04-promises-vs-callbacks)
+6. [Animating with Images](./05-how-to-use-canvas/05-animating-with-images)
+7. [Interactive Animations](./05-how-to-use-canvas/06-interactive-animations) **[TODO]**
