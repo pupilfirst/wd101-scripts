@@ -1,4 +1,4 @@
-> **Target title:** First steps with Canvas
+> **Target title:** First Steps with Canvas
 
 # Script
 
