@@ -1,10 +1,14 @@
 var c = document.getElementById("my-canvas");
 var ctx = c.getContext("2d");
 
-let img = new Image();
-
-img.onload = function () {
-  ctx.drawImage(img, 0, 0, 500, 500);
+let loadImage = (src) => {
+  return new Promise((resolve) => {
+    let img = new Image();
+    img.onload = () => resolve(img);
+    img.src = src;
+  });
 };
 
-img.src = "/images/idle.png";
+loadImage("/images/idle.png").then((image) => {
+  ctx.drawImage(image, 0, 0, 500, 500);
+});
