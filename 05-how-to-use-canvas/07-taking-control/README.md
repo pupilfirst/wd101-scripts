@@ -1,4 +1,4 @@
-> **Target title**: Loading Multiple Animations
+> **Target title**: Taking Control
 
 # Script
 
