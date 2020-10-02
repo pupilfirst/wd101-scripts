@@ -32,7 +32,7 @@ let animate = (ctx, images) => {
       }, index * 100);
     });
 
-    setTimeout(() => resolve(), images[move].length * 100);
+    setTimeout(resolve, images.length * 100);
   });
 };
 
