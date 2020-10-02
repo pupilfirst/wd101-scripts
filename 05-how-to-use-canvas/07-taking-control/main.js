@@ -20,7 +20,6 @@ let frames = {
 };
 
 let loadImages = () => {
-  // Return an array of loaded images.
   let promises = ["idle", "kick", "punch"]
     .map((animation) => {
       let animationFrames = frames[animation];
