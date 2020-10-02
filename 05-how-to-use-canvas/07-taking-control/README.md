@@ -10,6 +10,10 @@ When we look at how the animation is initially played, it's pretty clear that we
 
 What we need to do is to set up an infinite loop of animation. An easy way to do that here is to use recursion.
 
+I'll say that the `selectedAnimation` is `idle`, and I'll create a function `aux` that calls the `animate` function. Once this animation is complete, we want to call `aux` again. Remember that we'd set up the `animate` function to return a promise that resolves when the animation is complete. Because of that, we can simply say `then`, and then pass the `aux` function to it. This means that when the animation is complete, the `aux` function will be called again. And thus, we have recursion.
+
+Then to start it all off, we can call `aux()` for the first time.
+
 ```js
 loadImages().then((images) => {
   let selectedAnimation = "idle";
@@ -21,6 +25,8 @@ loadImages().then((images) => {
   aux();
 });
 ```
+
+> Switch to browser and refresh.
 
 That seems to be working OK. Right now, the `selectedAnimation` is stuck at `idle`. What we want to do is to change it when the user presses one of these buttons.
 
