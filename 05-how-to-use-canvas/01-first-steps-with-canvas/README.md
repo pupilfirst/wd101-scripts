@@ -27,7 +27,7 @@ The `<canvas>` element works a bit differently. It's also a tag, and just like a
 <script type="text/javascript" src="/main.js"></script>
 ```
 
-This is where the differences start. Just like a physical canvas that you would use to draw on, a canvas also has a width a height. We need to specify that so that the browser knows what it's dimension are.
+This is where the differences start. Just like a physical canvas that you would use to draw on, a canvas also has a width and a height. We need to specify that so that the browser knows what it's dimension are.
 
 ```html
 <canvas width="500" height="500"></canvas>
@@ -61,8 +61,8 @@ You can kind of see that it's breaking down all of the steps to actually drawing
 1. The first step is to get the canvas element on which were's going to draw a line.
 2. On the second line, we're getting what's call the _context_ of the canvas. This is a part of how canvas works - we'll be interacting with the context to actually execute commands on the canvas.
 3. On the third line, we're instructing the context to begin a path.
-4. Then we moving to the starting point on the canvas.
-5. Then we tell context to draw a line to a different point on the canvas.
+4. Then we move to the starting point on the canvas.
+5. And then tell context to draw a line to a different point on the canvas.
 6. Finally we tell context to _stroke_ the path that we created.
 
 Now, if this seems a _bit_ more complicated than it _should_ be, that's because these commands actually let you do more than just draw a line - that's where the `beginPath()` and `stroke()` commands come in - but let's ignore that for the moment, and see if this actually works, on our browser.
@@ -125,7 +125,7 @@ Let's actually copy that command into our Javascript file, and change it a bit.
 ctx.arc(250, 100, 50, 0, 2 * Math.PI);
 ```
 
-I'm actually going to set the center of the circle to 250 by 100. So the center will be 250 pixels from the left of the screen (it'll be centered), and 100 pixels from the top of the screen. I'll leave the radius at 50 pixels, the starting angle at 0, and ending angle at 2 times PI, because I want a full circle.
+I'm actually going to set the center of the circle to 250 by 100. Remember that we'd set the canvas's width and height to 500 pixels, so the center will be 250 pixels from the left of the screen (it'll be centered), and 100 pixels from the top of the screen. I'll leave the radius at 50 pixels, the starting angle at 0, and ending angle at 2 times PI, because I want a full circle.
 
 Now, I know that when we drew the line we needed to call the `stroke` function to actually draw those pixels, so I'm going to add that as well:
 
@@ -244,7 +244,7 @@ let drawLine = (startX, startY, endX, endY) => {
 };
 ```
 
-Now that we have a nice function, we can replace these sets of command [HIGHLIGHT LINE DRAWING COMAMANDS] with one function call each:
+Now that we have a nice function, we can replace these sets of commands [HIGHLIGHT LINE DRAWING COMAMANDS] with one function call each:
 
 ```javascript
 drawLine(250, 150, 250, 350); // Main body
@@ -253,6 +253,8 @@ drawLine(250, 200, 350, 150); // Left Arm
 drawLine(250, 350, 225, 450); // Right Leg
 drawLine(250, 350, 275, 450); // Left Leg
 ```
+
+Let's see if that still works.
 
 > Switch to browser and reload.
 

@@ -8,9 +8,9 @@ My name is Hari, and I'm going to focus on two aspects of programming in this le
 
 The first is searching.
 
-In the earlier levels of this course, you've seen Sherin and Jasim demonstrate many concepts by typing things out in the browser and then showing you the the result. When Jasim & Sherin wrote that code, it _looks_ as though they know everything that they're writing down. For the simpler parts, yes, they do remember, but when it gets even a _slightest_ bit complicated, we need to look things up.
+In the earlier levels of this course, you've seen Jacob and Jasim demonstrate many concepts by typing things out in the browser and then showing you the the result. When Jasim & Jacob wrote that code, it _looks_ as though they know everything that they're writing down. For the simpler parts, yes, they do remember, but when it gets even the _slightest_ bit complicated, we need to look things up.
 
-The reality is that you'll spend a lot of time searching for answers on the internet. For most people, including myself, Sherin, and Jasim, actually writing code to build something as complicated as website or a web service means having to look up how to write code _all the time_. This is because it's practically impossible to remember everything that's involved. A lot of our programming also involves testing, or experimenting with things using educated guesses to see if something works the way we expect it to.
+The reality is that you'll spend a lot of time searching for answers on the internet. For most people, including myself, Jacob, and Jasim, actually writing code to build something as complicated as website or a web service means having to look up how to write code _all the time_. This is because it's practically impossible to remember everything that's involved. A lot of our programming also involves testing, or experimenting with things using educated guesses to see if something works the way we expect it to.
 
 I'm going to use this level to show you a _bit_ of what of all that looks like.
 
