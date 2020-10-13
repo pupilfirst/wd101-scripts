@@ -28,17 +28,13 @@ Let's take a look at where we're at right now.
 var c = document.getElementById("my-canvas");
 var ctx = c.getContext("2d");
 
-let loadImage = (src) => {
-  return new Promise((resolve) => {
-    let img = document.createElement("img");
-    img.onload = () => resolve(img);
-    img.src = src;
-  });
+let loadImage = (src, callback) => {
+  let img = document.createElement("img");
+  img.onload = () => callback(img);
+  img.src = src;
 };
 
-loadImage("/images/idle/1.png").then((image) => {
-  ctx.drawImage(image, 0, 0, 500, 500);
-});
+loadImage("/images/idle/1.png", (img) => ctx.drawImage(img, 0, 0, 500, 500));
 ```
 
 We've loaded a single image and drawn it on-screen. To create an animation, we're going to want to load and draw a series of images - an _array_ of images, one after the other. The main thing that's going to change between these images is the _path_ to the image.
@@ -46,9 +42,7 @@ We've loaded a single image and drawn it on-screen. To create an animation, we'r
 We can already see what a valid path to one of these images looks like. If we change the path to another image, we can see that the image drawn on the browser does change.
 
 ```js
-loadImage("/images/idle/4.png").then((image) => {
-  ctx.drawImage(image, 0, 0, 500, 500);
-});
+loadImage("/images/idle/4.png", (img) => ctx.drawImage(img, 0, 0, 500, 500));
 ```
 
 > Switch to browser and reload.
@@ -60,7 +54,7 @@ let imagePath = (frameNumber) => {
   return "/images/idle/" + frameNumber + ".png";
 };
 
-loadImage(imagePath(1)).then((image) => {
+loadImage(imagePath(1), (img) => ctx.drawImage(img, 0, 0, 500, 500));
 ```
 
 Let's see if that works.
@@ -69,7 +63,7 @@ Let's see if that works.
 
 Now that we have a way to change the path of the image that we draw, we need to think about how we're going to draw these images one by one.
 
-The simplest way that occurs to me is to simply call this chunk of code, with a delay. However, I can immediately see a problem with that. Here, we're loading an image and then drawing it. This means that once one image is loaded an drawn, we'll need to wait until the next image is loaded before it can be drawn.
+The simplest way that occurs to me is to simply call this chunk of code, repeatedly, with a delay. However, I can immediately see a problem with that. Here, we're loading an image and then drawing it. This means that once one image is loaded and drawn, we'll need to wait until the next image is loaded before it can be drawn.
 
 If we're loading these images over the internet, that will make it difficult to make the interval, or delay between drawing each image a constant value.
 
@@ -78,8 +72,8 @@ This is not to mention the fact that it would be wasteful - if we let the animat
 I think it's pretty clear that what we need to do is to load all the images _before_ we begin the animation. Let's create a function for that:
 
 ```js
-let loadImages = () => {
-  // Returns an array of loaded images.
+let loadImages = (callback) => {
+  // Calls back with an array of loaded images.
 };
 ```
 
@@ -90,76 +84,85 @@ There's a couple of ways we could do this.
 First, we could try loading each image one by one.
 
 ```js
-let loadImages = () => {
-  // Returns an array of loaded images.
+let loadImages = (callback) => {
   let first = loadImage(imagePath(1));
   let second = loadImage(imagePath(2);
 };
 ```
 
-...and so on, but I can immediately see that that's just a lot of repetition. In fact, we can use a function that we learned about earlier - the `map` function.
+...and so on, but I can immediately see that that's just a lot of repetition. In fact, we can use a function that we learned about earlier - the `forEach` function.
 
 Let's start by creating an array that contains the part of the filename that changes:
 
 ```js
-let loadImages = () => {
-  // Returns an array of loaded images.
+let loadImages = (callback) => {
   [1, 2, 3, 4, 5, 6, 7, 8];
 };
 ```
 
-I'm going to map over these numbers, and then call the `loadImage` function that we wrote earlier.
+I'm going to iterate over these numbers, and then call the `loadImage` function that we wrote earlier.
 
 ```js
-let loadImages = () => {
-  // Returns an array of loaded images.
-  let something = [1, 2, 3, 4, 5, 6, 7, 8].map((frameNumber) => {
+let loadImages = (callback) => {
+  // Calls back with an array of loaded images.
+  [1, 2, 3, 4, 5, 6, 7, 8].forEach((frameNumber) => {
     let path = imagePath(frameNumber);
-    return loadImage(path);
+
+    loadImage(path, (image) => {
+      // Do something with image.
+    });
   });
 };
 ```
 
-What is this function returning? What is this `something`? We know that the `map` function takes each element of the array, and then passes that into the inner function. The return value from the inner function is then added to an array, and that's what get set on the `something` variable.
+We know that the `loadImage` function accepts a callback function that will get called only when an image has loaded. But _this_ function that we're writing now also accepts a callback. That callback is supposed to be called once _all_ of these images have loaded.
 
-We also know that `loadImage` actually returns a promise. This means that something is actually an array of `promises`.
-
-```js
-let promises = [1, 2, 3, 4, 5, 6, 7, 8].map((frameNumber) => {
-```
-
-Now, remember that these promises are just that. Promises. They haven't actually been loaded _yet_. However, we only want to start an animation after all of these images have loaded. Another way to say that is that we want to wait until all of these promises have resolved. But what we have is an array of promises. How do we wait for all of them to resolve?
-
-Let's do a quick search.
-
-> Google for `how to resolve many promises`.
-
-Remember how I told you in the last lesson that we'll see _why_ we converted the `onload` callback to a promise? _This_ is why. Let's check out what the `Promise.all` function does.
-
-> Click on _Promise.all() - JavaScript | MDN_
-
-> Read from page: _The Promise.all() method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises. This returned promise will resolve when all of the input's promises have resolved_.
-
-This is exactly what we're looking for. `Promise.all()` takes an array of promises and returns a single promise that resolves only after all of the promises in the array have resolved. When this single promise resolves, it gives an array of values, one for each of promises that it was waiting on.
-
-Let's try using that in our `loadImages` function.
+To do that, I'll first set up an empty `images` array. Then, in `loadImage`'s callback function, I'll add this image to the `images` array, making sure that the loaded image is placed in the correct location. Remember that an array's index starts at zero, so I'm reducing `frameNumber` by one to get the correct array index.
 
 ```js
-let loadImages = () => {
-  // Return an array of loaded images.
-  let promises = [1, 2, 3, 4, 5, 6, 7, 8].map((frameNumber) => {
+let loadImages = (callback) => {
+  let images = [];
+
+  [1, 2, 3, 4, 5, 6, 7, 8].forEach((frameNumber) => {
     let path = imagePath(frameNumber);
-    return loadImage(path);
-  });
 
-  return Promise.all(promises);
+    loadImage(path, (image) => {
+      images[frameNumber - 1] = image;
+    });
+  });
 };
 ```
 
-Let's test if this is working. Let's try to load all images, and then draw the first image after they've all finished loading.
+Now all that's left to do is actually call the `callback` function that we're receiving as an argument. Remember that we want to call this function with the loaded images only when _all_ the images have loaded.
+
+We can do this with the help of a counter that keeps track of the images that are left to load.
 
 ```js
-loadImages().then((images) => {
+let loadImages = (callback) => {
+  let images = [];
+  let imagesToLoad = 8;
+
+  [1, 2, 3, 4, 5, 6, 7, 8].forEach((frameNumber) => {
+    let path = imagePath(frameNumber);
+
+    loadImage(path, (image) => {
+      images[frameNumber - 1] = image;
+      imagesToLoad = imagesToLoad - 1;
+
+      if (imagesToLoad === 0) {
+        callback(images);
+      }
+    });
+  });
+};
+```
+
+I'll start by saying that I have 8 `imagesToLoad`. Each time an `image` is loaded, I'll reduce that count by one. Then I'll check if `imagesToLoad` has reached _zero_. If it has, then that means that all images have been loaded, and I can safely call the `callback` function with the array of loaded images.
+
+That should be it. Let's test if this is working. Let's try to load all images, and then draw the first image after they've all finished loading.
+
+```js
+loadImages((images) => {
   ctx.drawImage(images[0], 0, 0, 500, 500);
 });
 ```
@@ -167,14 +170,14 @@ loadImages().then((images) => {
 Let's try picking another loaded image from the array.
 
 ```js
-loadImages().then((images) => {
+loadImages((images) => {
   ctx.drawImage(images[3], 0, 0, 500, 500);
 });
 ```
 
 Yup. That works as expected. At this point, all images have been loaded, and are ready to be drawn on the canvas.
 
-Now that we have a list of loaded image files, we can start thinking about how we're going to draw these images one by one, with delay between each. I'm going to imagine that we have an `animate` function that lets us do that:
+Now that we have an array of loaded image files, we can start thinking about how we're going to draw these images one by one, with delay between each. I'm going to imagine that we have an `animate` function that lets us do that:
 
 ```js
 let animate = () => {};
@@ -194,41 +197,43 @@ let animate = (ctx, images) => {};
 
 One thing we know about an animation is that once an animation has started, it'll take some time to complete it. Let's assume that we're going to wait 100 milliseconds between drawing each image on the canvas. For an animation with 8 frames, we know that it'll finish only after 800 milliseconds.
 
-Let's take this fact into account and have this function return a `Promise`.
+Let's take this fact into account and have this function accept a callback.
 
 ```js
-let animate = (ctx, images) => {
-  return new Promise((resolve) => {});
+let animate = (ctx, images, callback) => {
+  // callback() after animation is complete.
 };
 ```
 
-We'll set it up so that the `animate` function will return a promise that resolves _after_ the animation is complete. In fact, we can do that first:
+We'll set it up so that the `callback` function is called _after_ the animation is complete. In fact, we can do that first:
 
 ```js
-let animate = (ctx, images) => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, images.length * 100);
-  });
+let animate = (ctx, images, callback) => {
+  setTimeout(callback, images.length * 100);
 };
 ```
 
-If there are 8 frames, the returned promise will resolve in 800 milliseconds. What's the function doing during those 800 milliseconds though? We've got to draw those images one by one, of course. Let's do that, again, using the `setTimeout` function.
+If there are 8 frames, the callback will be triggered in 800 milliseconds. What's the function doing during those 800 milliseconds though? We've got to draw those images one by one, of course. Let's do that, again, using the `setTimeout` function.
 
 ```js
-return new Promise((resolve) => {
-  images.forEach((image, index) => {
-    setTimeout(() => {
-      ctx.drawImage(image, 0, 0, 500, 500);
-    }, index * 100);
-  });
-
-  setTimeout(resolve, images.length * 100);
+images.forEach((image, index) => {
+  setTimeout(() => {
+    ctx.drawImage(image, 0, 0, 500, 500);
+  }, index * 100);
 });
+
+setTimeout(callback, images.length * 100);
 ```
 
-For the first image, index is going to be zero, so it'll draw immediately. The second image will have a timeout of 100ms, the third 200, and so on, until the last, which has a delay of 700ms. A hundred milliseconds after that, the promise itself will resolve, and the animation would have ended.
+For the first image, `index` is going to be zero, so it'll draw immediately. The second image will have a timeout of 100ms, the third 200, and so on, until the last, which has a delay of 700ms. A hundred milliseconds after that, the callback function will be triggered, and the animation would have ended.
 
 That's actually it. Let's see if it works, by using it.
+
+```js
+loadImages((images) => {
+  animate(ctx, images, () => console.log("Done!"));
+});
+```
 
 > Switch to browser and refresh.
 

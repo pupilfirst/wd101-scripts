@@ -1,12 +1,10 @@
 var c = document.getElementById("my-canvas");
 var ctx = c.getContext("2d");
 
-let loadImage = (src, animation, frameNumber) => {
-  return new Promise((resolve) => {
-    let img = document.createElement("img");
-    img.onload = () => resolve([img, animation, frameNumber]);
-    img.src = src;
-  });
+let loadImage = (src, animation, frameNumber, callback) => {
+  let img = document.createElement("img");
+  img.onload = () => callback(img, animation, frameNumber);
+  img.src = src;
 };
 
 let imagePath = (frameNumber, animation) => {
@@ -19,47 +17,41 @@ let frames = {
   punch: [1, 2, 3, 4, 5, 6, 7],
 };
 
-let loadImages = () => {
-  let promises = ["idle", "kick", "punch"]
-    .map((animation) => {
-      let animationFrames = frames[animation];
+let loadImages = (callback) => {
+  let organizedImages = { kick: [], punch: [], idle: [] };
+  let counter = 0;
 
-      return animationFrames.map((frameNumber) => {
-        let path = imagePath(frameNumber, animation);
-        return loadImage(path, animation, frameNumber);
+  ["idle", "kick", "punch"].forEach((animation) => {
+    let animationFrames = frames[animation];
+    counter = counter + animationFrames.length;
+
+    animationFrames.forEach((frameNumber) => {
+      let path = imagePath(frameNumber, animation);
+
+      loadImage(path, animation, frameNumber, (img, anim, fNumber) => {
+        counter = counter - 1;
+        organizedImages[anim][fNumber - 1] = img;
+
+        if (counter == 0) {
+          callback(organizedImages);
+        }
       });
-    })
-    .flat();
-
-  return Promise.all(promises).then((loadedImages) => {
-    let organizedImages = { kick: [], punch: [], idle: [] };
-
-    loadedImages.forEach((loadedImage) => {
-      let image = loadedImage[0];
-      let animation = loadedImage[1];
-      let frameNumber = loadedImage[2];
-
-      organizedImages[animation][frameNumber - 1] = image;
     });
-
-    return Promise.resolve(organizedImages);
   });
 };
 
-let animate = (ctx, images, animation) => {
-  return new Promise((resolve) => {
-    images[animation].forEach((image, index) => {
-      setTimeout(() => {
-        ctx.clearRect(0, 0, 500, 500);
-        ctx.drawImage(image, 0, 0, 500, 500);
-      }, index * 100);
-    });
-
-    setTimeout(resolve, images[animation].length * 100);
+let animate = (ctx, images, animation, callback) => {
+  images[animation].forEach((image, index) => {
+    setTimeout(() => {
+      ctx.clearRect(0, 0, 500, 500);
+      ctx.drawImage(image, 0, 0, 500, 500);
+    }, index * 100);
   });
+
+  setTimeout(callback, images[animation].length * 100);
 };
 
-loadImages().then((images) => {
+loadImages((images) => {
   let queuedAnimations = [];
 
   let aux = () => {
@@ -71,7 +63,7 @@ loadImages().then((images) => {
       selectedAnimation = queuedAnimations.shift();
     }
 
-    animate(ctx, images, selectedAnimation).then(aux);
+    animate(ctx, images, selectedAnimation, aux);
   };
 
   aux();
