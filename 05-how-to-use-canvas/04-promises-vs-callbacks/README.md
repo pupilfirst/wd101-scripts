@@ -7,7 +7,7 @@ Before we start working on the animation system, there's one more thing I want t
 The question I have is do we really need to set the `onload` callback for the image element? Will this work if we simply set the source for the image, and then tell context to draw the image. Let's try that out:
 
 ```js
-let img = new Image();
+let img = document.createElement("img");
 img.src = "/images/idle.png";
 ctx.drawImage(img, 0, 0, 500, 500);
 ```
@@ -17,7 +17,7 @@ ctx.drawImage(img, 0, 0, 500, 500);
 Not suprisingly, nothing shows up on screen. So it appears that we're only allowed to draw an image onto a canvas after it is fully loaded.
 
 ```js
-let img = new Image();
+let img = document.createElement("img");
 
 img.onload = function () {
   ctx.drawImage(img, 0, 0, 500, 500);
@@ -45,7 +45,7 @@ First, let's write the `loadImage` function:
 ```js
 let loadImage = (src) => {};
 
-let img = new Image();
+let img = document.createElement("img");
 ```
 
 We know that the loadImage function is supposed to return a promise, so let's create a new `Promise`.
@@ -61,7 +61,7 @@ Now what is this promise supposed to do? Well, it's supposed [HIGHLIGHT LINES BE
 ```js
 let loadImage = (src) => {
   return new Promise((resolve) => {
-    let img = new Image();
+    let img = document.createElement("img");
 
     img.onload = function () {
       ctx.drawImage(img, 0, 0, 500, 500);

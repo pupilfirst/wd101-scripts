@@ -3,7 +3,7 @@ var ctx = c.getContext("2d");
 
 let loadImage = (src, animation, frameNumber) => {
   return new Promise((resolve) => {
-    let img = new Image();
+    let img = document.createElement("img");
     img.onload = () => resolve([img, animation, frameNumber]);
     img.src = src;
   });

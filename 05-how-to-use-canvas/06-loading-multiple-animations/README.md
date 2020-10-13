@@ -36,7 +36,7 @@ var ctx = c.getContext("2d");
 
 let loadImage = (src) => {
   return new Promise((resolve) => {
-    let img = new Image();
+    let img = document.createElement("img");
     img.onload = () => resolve(img);
     img.src = src;
   });
@@ -205,7 +205,7 @@ return animationFrames.map((frameNumber) => {
 ```js
 let loadImage = (src, animation, frameNumber) => {
   return new Promise((resolve) => {
-    let img = new Image();
+    let img = document.createElement("img");
     img.onload = () => resolve([img, animation, frameNumber]);
     img.src = src;
   });

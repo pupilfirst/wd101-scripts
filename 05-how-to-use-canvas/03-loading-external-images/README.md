@@ -61,7 +61,7 @@ The third line of this function seems to be creating an `img` variable that's ge
 
 And yes, if we scroll down a bit, we can see that the second and third arguments are simply the X & Y co-ordinates at which the image will be placed.
 
-However, we have a small problem here. This line of code is loading an image that is _already_ on-screen, and _then_ putting in on the canvas. What _we_ really want to do is load an image, from our computer and display it straight onto the `canvas` element.
+However, we have a small problem here. This line of code is taking an image that is _already_ on-screen, and _then_ placing it on the canvas. What _we_ really want to do is load an image, from our computer, or server, and display it straight onto the `canvas` element.
 
 Let's try changing our search string a bit to see if we can find a better result. Instead of `canvas insert image`, I'm going to search for `canvas load image`. Let's see if that makes a difference.
 
@@ -77,7 +77,7 @@ This looks better.
 - The second part of the code is setting an `onload` property for the new image, and setting it as a function which calls the `drawImage` function on the canvas context. So once the image is loaded, this function will be called, which will draw the image on the canvas.
 - Finally, we're setting the `src` for the image - the location from which the image is to be loaded.
 
-This code does appear to have a bug, though. It names the first argument
+This code does appear to have a bug, though. It names the first variable `myImg`, but then proceeds to set the `onload` and `src` attributes on an `img` variable. When copying code that you find from the Internet, always double-check to make sure that it's free from bugs.
 
 Let's copy and paste this into our Javascript file, fix that variable name, update the source and a few other things.
 
@@ -91,9 +91,25 @@ img.onload = function () {
 img.src = "/images/idle.png";
 ```
 
-The main change that I've made here is that I've changed the source of the image to path to my `idle.png` file.
+The main change that I've made here is that I've updated the source of the image to point to my `idle.png` file.
 
-Let's see if that works.
+You're also probably unfamiliar with the `new` syntax that is being used to create an image. This is a part of Javascript's support for object-oriented programming, which we're not covering in this introductory course.
+
+In fact, there is another way to create a new image. If we search for how to _create an image_...
+
+> Google `javascript create image`.
+
+...the first result...
+
+> Click _HTML DOM Image Object - W3Schools_.
+
+...contains a line of code that shows us another, more familiar way to create an image. Let's use that instead.
+
+```js
+let img = document.createElement("img");
+```
+
+Let's see if this works.
 
 > Switch to browser and refresh.
 
@@ -101,7 +117,7 @@ The image has showed up, but we seem to have a small problem - the image seems t
 
 > On browser, switch to _HTML canvas drawImage() Method - W3Schools_
 
-When going through the documentation for the `drawImage` function, you might have noticed that it takes additional arguments. It says here that it has a second form, where we can pass two more arguments that let us specify the width and the height of the image. Let's try that.
+When going through the documentation for the `drawImage` function, you might have noticed that it takes additional arguments. It says here that it has a second form, where we can pass two more arguments that lets us specify the width and the height of the image. Let's try that.
 
 ```js
 ctx.drawImage(img, 0, 0, 500, 500);
