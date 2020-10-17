@@ -33,6 +33,14 @@ This is where the differences start. Just like a physical canvas that you would 
 <canvas width="500" height="500"></canvas>
 ```
 
+To some extent, the canvas element is also like any other HTML tag. You can give it some style. For example, I'm going to give this `canvas` element a border - just so that it's clear what the size of the canvas that we're creating is.
+
+```html
+<canvas width="500" height="500" style="border: 2px solid red"></canvas>
+```
+
+There we go. We can see what the shape of the canvas is.
+
 Now if you had a physical canvas, and I told you to draw a line on it with a pen, what you would probably do is pick up the pen, place it at a starting point on the canvas, and then draw a line to some end-point. Drawing within the canvas works just like that - drawing is a series of steps, and we need to use Javascript to execute those steps.
 
 Let's try and draw a line on the canvas.
