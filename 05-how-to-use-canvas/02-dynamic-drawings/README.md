@@ -2,14 +2,6 @@
 
 # Script
 
-> Author's Note: Talk about how things drawn on a canvas need not be static, and how things drawn on a canvas can _change_.
->
-> Use the image drawn on the last lesson and convert some of its properties into variables. Set up a function call that _customizes_ the image with supplied properties.
->
-> For example, on the stick figure, create an array of "people" objects that describes their height, and maybe the hair-style (bald, long, spiky, cap-wearing, etc.), and iterate over that to draw a group of people.
->
-> Or, on the ringed planet, allow control over the number of stars, the radius of the planet, the rings, and number of rings, etc.
-
 ```html
 <canvas id="my-canvas" width="500" height="500"></canvas>
 
@@ -71,11 +63,7 @@ Notice how most of this is just numbers. It's just _data_. What we've done is co
 
 And this program is something that we control. _We_ decide what the image looks like. And we can _change_ this at any time.
 
-Unlike an image that we draw in Photoshop, or Paint, these images are being created by following our commands. If we change the data, or the commands, we change the output.
-
-We can use this property to our advantage.
-
-Let's actually try and build something that would actually be useful in the real-world. Let's build an user _avatar_ generator. What I'm talking about is an app that will generates a random _face_ each time you visit the webpage.
+Let me demonstrate what I mean. Let's build an user _avatar_ generator. What I'm talking about is an app that will generates a random _face_ each time you visit the webpage.
 
 Let's get started.
 
