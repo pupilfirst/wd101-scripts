@@ -1,12 +1,10 @@
-var c = document.getElementById("my-canvas");
-var ctx = c.getContext("2d");
+let c = document.getElementById("my-canvas");
+let ctx = c.getContext("2d");
 
-let loadImage = (src, animation, frameNumber) => {
-  return new Promise((resolve) => {
-    let img = document.createElement("img");
-    img.onload = () => resolve([img, animation, frameNumber]);
-    img.src = src;
-  });
+let loadImage = (src, callback) => {
+  let img = document.createElement("img");
+  img.onload = () => callback(img);
+  img.src = src;
 };
 
 let imagePath = (frameNumber, animation) => {
@@ -19,47 +17,42 @@ let frames = {
   punch: [1, 2, 3, 4, 5, 6, 7],
 };
 
-let loadImages = () => {
-  // Return an array of loaded images.
-  let promises = ["idle", "kick", "punch"]
-    .map((animation) => {
-      let animationFrames = frames[animation];
+let loadImages = (callback) => {
+  let images = { kick: [], punch: [], idle: [] };
+  let imagesToLoad = 0;
 
-      return animationFrames.map((frameNumber) => {
-        let path = imagePath(frameNumber, animation);
-        return loadImage(path, animation, frameNumber);
+  ["idle", "kick", "punch"].forEach((animation) => {
+    let animationFrames = frames[animation];
+    imagesToLoad = imagesToLoad + animationFrames.length;
+
+    animationFrames.forEach((frameNumber) => {
+      let path = imagePath(frameNumber, animation);
+
+      loadImage(path, (image) => {
+        images[animation][frameNumber - 1] = image;
+        imagesToLoad = imagesToLoad - 1;
+
+        if (imagesToLoad === 0) {
+          callback(images);
+        }
       });
-    })
-    .flat();
-
-  return Promise.all(promises).then((loadedImages) => {
-    let organizedImages = { kick: [], punch: [], idle: [] };
-
-    loadedImages.forEach((loadedImage) => {
-      let image = loadedImage[0];
-      let animation = loadedImage[1];
-      let frameNumber = loadedImage[2];
-
-      organizedImages[animation][frameNumber] = image;
     });
-
-    return Promise.resolve(organizedImages);
   });
 };
 
-let animate = (ctx, images, animation) => {
-  return new Promise((resolve) => {
-    images[animation].forEach((image, index) => {
-      setTimeout(() => {
-        ctx.clearRect(0, 0, 500, 500);
-        ctx.drawImage(image, 0, 0, 500, 500);
-      }, index * 100);
-    });
-
-    setTimeout(resolve, images[animation].length * 100);
+let animate = (ctx, images, animation, callback) => {
+  images[animation].forEach((image, index) => {
+    setTimeout(() => {
+      ctx.clearRect(0, 0, 500, 500);
+      ctx.drawImage(image, 0, 0, 500, 500);
+    }, index * 100);
   });
+
+  setTimeout(callback, images[animation].length * 100);
 };
 
-loadImages().then((images) => {
-  animate(ctx, images, "punch");
+loadImages((images) => {
+  animate(ctx, images, "punch", () => {
+    console.log("Done!");
+  });
 });
