@@ -16,11 +16,16 @@ Beneath the canvas, I'll add two buttons:
 
 ```html
 <canvas id="my-canvas" width="500" height="500"></canvas>
-<button id="kick">Kick (Left Arrow Key)</button>
-<button id="punch">Punch (Right Arrow Key)</button>
+<button>Kick (Left Arrow Key)</button>
+<button>Punch (Right Arrow Key)</button>
 ```
 
 I'll set a unique `id` for each button so that we can locate them from Javascript.
+
+```html
+<button id="kick">Kick (Left Arrow Key)</button>
+<button id="punch">Punch (Right Arrow Key)</button>
+```
 
 > Switch to browser and refresh.
 
