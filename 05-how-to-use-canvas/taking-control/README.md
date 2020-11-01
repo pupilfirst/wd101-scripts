@@ -15,11 +15,11 @@ I'll say that the `selectedAnimation` is `idle`, and I'll create a function `aux
 Then to start it all off, we can call `aux()` for the first time.
 
 ```js
-loadImages().then((images) => {
+loadImages((images) => {
   let selectedAnimation = "idle";
 
   let aux = () => {
-    animate(ctx, images, selectedAnimation).then(aux);
+    animate(ctx, images, selectedAnimation, aux);
   };
 
   aux();
@@ -63,8 +63,9 @@ This would work much better if the animation returned to `idle` once the user-se
 Let's try implementing that using a _queue_. I'll replace the `selectedAnimation` with a queue of animations
 
 ```js
+  let queuedAnimations = [];
+
   let aux = () => {
-    let queuedAnimations = [];
 ```
 
 Then I can pick the `selectedAnimation` inside the `aux` function. When the queue is empty, we'll say that the selected animation is `idle`, and when it's not, we'll `shift` from the queue to get the element that was inserted first.
@@ -79,7 +80,7 @@ let aux = () => {
     selectedAnimation = queuedAnimations.shift();
   }
 
-  animate(ctx, images, selectedAnimation).then(aux);
+  animate(ctx, images, selectedAnimation, aux);
 };
 ```
 
@@ -138,7 +139,7 @@ node.addEventListener("keydown", function (event) {
 
 Here, the _node_ that we want to add an event listener to is going to be the entire HTML docuemnt. So let's just replace `node` with `document`.
 
-Instead of `keydown`, I'm going to guess that there's a `keyup` event. I think it would be much better for the animation to be queued when the user releases the key, not when she presses down on it.
+Instead of `keydown`, I'm going to guess that there's a `keyup` event. I think it would be much better for the animation to be queued when a user releases the key, not when they presses down on it.
 
 ```js
 document.addEventListener("keyup", (event) => {
@@ -156,4 +157,10 @@ That works really well, and it feels polished.
 
 Assuming that you've followed along till this point, you're at a great starting point for experimentation.
 
-You might have noticed that we've supplied additional assets with this lesson, that includes more animations and a background image. We strongly encourage you to play and expriment. Have fun and try out new things. More importantly, search for answers if you hit road-blocks. _Learning how to search_ is a real thing - you've seen some of how we do that in the past few lessons, but that's something you'll need to practise and get comfortable with over time.
+You might have noticed that we've supplied additional assets with this lesson, that includes images for more animations and a background image.
+
+We strongly encourage you to play and experiment. Try out new things, and just have fun with the process.
+
+More importantly, search for answers if you hit road-blocks. _Learning how to search_ is a real thing - you've seen some of how we do that in the past few lessons, but that's something you'll need to practise and get comfortable with over time.
+
+So that's actually it for this level. Buh-bye!
