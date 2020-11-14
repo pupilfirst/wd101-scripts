@@ -1,11 +1,12 @@
-## Level 5
+## Building a game with canvas
 
-0. [Introduction](./05-how-to-use-canvas/intro)
-1. [First Steps with Canvas](./05-how-to-use-canvas/first-steps-with-canvas)
-2. [Dynamic Drawings](./05-how-to-use-canvas/dynamic-drawings)
-3. [Martial Arts Sim - Intro](./05-how-to-use-canvas/martial-arts-sim-intro)
-4. [Loading External Images](./05-how-to-use-canvas/loading-external-images)
-5. [Using Callbacks](./05-how-to-use-canvas/using-callbacks)
-6. [Animating with Images](./05-how-to-use-canvas/animating-with-images)
-7. [Loading Multiple Animations](./05-how-to-use-canvas/loading-multiple-animations)
-8. [Taking Control](./05-how-to-use-canvas/taking-control)
+1. [Introduction](./building-a-game-with-canvas/intro)
+2. [Install Node.js](./building-a-game-with-canvas/install-node-js)
+3. [First Steps with Canvas](./building-a-game-with-canvas/first-steps-with-canvas)
+4. [Dynamic Drawings](./building-a-game-with-canvas/dynamic-drawings)
+5. [Martial Arts Sim - Intro](./building-a-game-with-canvas/martial-arts-sim-intro)
+6. [Loading External Images](./building-a-game-with-canvas/loading-external-images)
+7. [Using Callbacks](./building-a-game-with-canvas/using-callbacks)
+8. [Animating with Images](./building-a-game-with-canvas/animating-with-images)
+9. [Loading Multiple Animations](./building-a-game-with-canvas/loading-multiple-animations)
+10. [Taking Control](./building-a-game-with-canvas/taking-control)
