@@ -1,3 +1,8 @@
+## Introduction
+
+1. [Install Visual Studio Code](./introduction/installing-vscode)
+2. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
+
 ## Building a game with canvas
 
 1. [Introduction](./building-a-game-with-canvas/intro)
