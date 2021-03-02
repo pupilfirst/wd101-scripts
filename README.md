@@ -1,11 +1,18 @@
-## Introduction
+## 1. Welcome to the course!
 
 1. [Install Visual Studio Code](./introduction/installing-vscode)
 2. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
 3. [Install Ubuntu in Windows, using WSL](./introduction/installing-ubuntu-linux-using-wsl)
 4. [Install Ubuntu in Windows, using Virtualbox](./introduction/installing-ubuntu-linux-using-virtualbox)
 
-## Building a game with canvas
+## 3. Working with Strings
+
+### Switching to the VSCode Editor
+
+1. Putting HTML and JS together
+2. Adding comments to HTML and JS
+
+## 7. Building a game with canvas
 
 1. [Introduction](./building-a-game-with-canvas/intro)
 2. [Install Node.js](./building-a-game-with-canvas/install-node-js)
