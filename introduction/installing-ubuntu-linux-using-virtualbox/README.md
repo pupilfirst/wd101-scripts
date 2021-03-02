@@ -1,0 +1,3 @@
+Hi! If you've watched the video in the previous lesson, you know why we're asking you to install Ubuntu inside of your Windows operating system. Now if you're got a version of Windows older than Windows 10 on your computer, then you won't be able to use the latest WSL feature. Instead, we can use a different piece of open-source software known as VirtualBox to run Ubuntu inside of a virtual machine on your PC.
+
+The rest of this lesson includes detailed instructions on how to install Virtualbox on your computer, and how to use it to install a recent version of Ubuntu using it. As usual, if you run into any issues with this process, or have doubts, plesase post a question on the web development community detailing the issue that you faced.

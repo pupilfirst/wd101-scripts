@@ -2,6 +2,8 @@
 
 1. [Install Visual Studio Code](./introduction/installing-vscode)
 2. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
+3. [Install Ubuntu in Windows, using WSL](./introduction/installing-ubuntu-linux-using-wsl)
+4. [Install Ubuntu in Windows, using Virtualbox](./introduction/installing-ubuntu-linux-using-virtualbox)
 
 ## Building a game with canvas
 
