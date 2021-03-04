@@ -9,8 +9,8 @@
 
 ### Switching to the VSCode Editor
 
-1. Putting HTML and JS together
-2. Adding comments to HTML and JS
+1. [Putting HTML and JS together](./working-with-strings/putting-html-and-js-together)
+2. [Adding comments to HTML and JS](./working-with-strings/adding-comments-to-html-and-js)
 
 ## 7. Building a game with canvas
 
