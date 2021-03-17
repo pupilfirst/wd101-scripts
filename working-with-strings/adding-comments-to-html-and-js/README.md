@@ -38,4 +38,4 @@ multi-line comment. */
 console.log("Hello from a JS file");
 ```
 
-So, just to recap, these comments do not change the way your program will work in any way. All they're meant to do is to _help_ with whoever is going to be _looking_ at the source code of your program or website. It'll provide some documentation for something like a complex function, or a tricky piece of code.
+So, just to recap, these comments do not change the way your program will work in any way. All they're meant to do is to _help_ whoever is going to be _looking_ at the source code of your program or website. It'll provide some documentation for something like a complex function, or a tricky piece of code.
