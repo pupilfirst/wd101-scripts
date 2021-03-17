@@ -1,3 +1,5 @@
+Presentation: https://docs.google.com/presentation/d/1BG2ndHBp7cr4A4IqKFuSdGsrNSWBfB_c1OpVcaYGa2Q/edit?usp=sharing
+
 In this lesson, we're going to learn how to install Ubuntu, an extremely popular Linux distribution inside of Windows.
 
 Before we do that, I want to a take a minute and make it very clear **why** we're asking you to install Ubuntu inside Windows. The main reason is that it makes it easier for _us_ to build and maintain this course. There are a large number of _correct_ ways in which you can set up your developer environment, and there's an equally large number of ways in which you can make some mistake in the process and get stuck. Practically speaking, we can't help you if you get stuck with a developer environment setup that we aren't familiar with, so for the purpose of _this_ course, we're going to ask you to use a setup that we can help you with, if you ever get stuck with something.
