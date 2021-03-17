@@ -1,3 +1,5 @@
+Presentation: https://docs.google.com/presentation/d/1S3VFL5UheHCpiaJTqxnHy2LyswmPthlHFQW5wy5hBos/edit?usp=sharing
+
 Whenever we write code, whether that's HTML, or Javascript, or any other programming language, we're telling the _computer_ how to do a certain thing.
 
 But the computer is not the _only_ thing that you're communicating with through your programs. You're also going to be talking with _people_. The code that you write could be read by your colleagues at work. If you're working on an open-source project, it's going to be read by people who you might not even know. _You_ are going to be reading your own code in the future, and you might have forgotten what a certain piece of code is supposed to do.
