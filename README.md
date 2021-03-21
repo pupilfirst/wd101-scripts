@@ -7,6 +7,10 @@
 
 ## 3. Working with Strings
 
+### First steps with Javascript
+
+1. [What is JavaScript](./working-with-strings/what-is-javascript)
+
 ### Switching to the VSCode Editor
 
 1. [Putting HTML and JS together](./working-with-strings/putting-html-and-js-together)
