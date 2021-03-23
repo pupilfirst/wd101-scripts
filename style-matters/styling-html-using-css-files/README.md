@@ -61,6 +61,6 @@ We can also add multiple classes to an element. For example, let's add another c
 
 If we reload the page, we can see that the new styling has been applied.
 
-The great thing about CSS is that we can re-use the styling for many different properties. This lets us avoid repeating ourselves.
+When writing CSS like this, we are able to re-use the same styling for many different elements. This lets us avoid repeating ourselves, when we write code.
 
-In the next lesson, we'll actually add a library called Tailwind, that adds a lot of very useful CSS classes that will let us build a good looking UI very quickly.
+In the next lesson, we'll actually add a library called Tailwind, that adds a lot of very useful CSS classes. It's something that will let us build a good looking UI very quickly.
