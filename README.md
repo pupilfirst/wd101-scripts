@@ -23,6 +23,10 @@
 1. [Putting HTML and JS together](./working-with-strings/putting-html-and-js-together)
 2. [Adding comments to HTML and JS](./working-with-strings/adding-comments-to-html-and-js)
 
+## 6. Functions
+
+1. [Need additional help?](./functions/need-additional-help)
+
 ## 8. Building a game with canvas
 
 1. [Introduction](./building-a-game-with-canvas/intro)
