@@ -1,0 +1,50 @@
+<div style="margin: 16px 32px">
+  <h3>Flights from Bengaluru to Amsterdam</h3>
+
+  <ul id="flights"></ul>
+
+  <div style="display: flex">
+    <!-- 1 stop -->
+    <input type="checkbox" id="stops-1" style="margin-right: 8px" />
+    <label for="stops-1" onclick="toggleStop('one')">1 stop</label>
+
+    <!-- 2 stops -->
+    <input type="checkbox" id="stops-2" style="margin-left: 16px; margin-right: 8px" />
+    <label for="stops-2" onclick="toggleStop('two')">2 stops</label>
+  </div>
+</div>
+
+<script>
+  let flights = [
+    { airline: "Air India", stops: 0 },
+    { airline: "SriLankan Airlines", stops: 2 },
+    { airline: "British Airways", stops: 1 },
+    { airline: "Etihad Airways", stops: 1 },
+    { airline: "Thai Airways", stops: 2 },
+    { airline: "Singapore Air", stops: 2 },
+    { airline: "Air France", stops: 2 },
+    { airline: "Qatar Airways", stops: 1 },
+    { airline: "Lufthansa", stops: 1 },
+  ]
+
+  // Event Handling
+  let selectedStops = { one: false, two: false };
+
+  let toggleStop = (key) => {
+    selectedStops[key] = !selectedStops[key];
+    render();
+  };
+
+  // View
+  let createListItem = (item) => "<li>" + item.airline + "</li>";
+
+  let htmlView = (items) => items.map(createListItem).join("\n");
+
+  let render = () => {
+    let view = htmlView(flights);
+
+    document.getElementById("flights").innerHTML = view;
+  };
+
+  render();
+</script>

@@ -27,6 +27,10 @@
 
 1. [Need additional help?](./functions/need-additional-help)
 
+## 7. Collections
+
+1. [A minimal UI for filtering flight search results](./collections/a-minimal-ui-for-filtering-flight-search-results)
+
 ## 8. Building a game with canvas
 
 1. [Introduction](./building-a-game-with-canvas/intro)
