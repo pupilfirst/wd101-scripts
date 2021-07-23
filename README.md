@@ -39,6 +39,7 @@
 4. [Dynamic Drawings](./building-a-game-with-canvas/dynamic-drawings)
 5. [Martial Arts Sim - Intro](./building-a-game-with-canvas/martial-arts-sim-intro)
 6. [Loading External Images](./building-a-game-with-canvas/loading-external-images)
+7. [Absolute & relative file paths](./building-a-game-with-canvas/absolute-and-relative-file-paths)
 7. [Using Callbacks](./building-a-game-with-canvas/using-callbacks)
 8. [Animating with Images](./building-a-game-with-canvas/animating-with-images)
 9. [Loading Multiple Animations](./building-a-game-with-canvas/loading-multiple-animations)
