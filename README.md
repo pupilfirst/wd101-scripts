@@ -21,6 +21,7 @@ This work is licensed under a
 
 ## L1. Welcome to the course!
 
+1. [How to get help](./introduction/how-to-get-help)
 1. [Install Visual Studio Code](./introduction/installing-vscode)
 2. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
 3. [Install Ubuntu in Windows, using WSL](./introduction/installing-ubuntu-linux-using-wsl)
