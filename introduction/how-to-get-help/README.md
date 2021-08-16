@@ -1,9 +1,3 @@
-One of the main advantages of being a student in this course is that you can get help from experts easily. So let's make it clear how you can get help in two parts:
-
-First, _where_ to ask questions, and second, _how_ to ask questions.
-
-Let's start with the first part - where to ask questions.
-
 So while you're going through this course, you might encounter situations where you get stuck for some reason.
 
 1. Maybe you have some doubt about a topic that we've just discussed.
@@ -13,6 +7,12 @@ So while you're going through this course, you might encounter situations where 
 5. It really could be anything.
 
 If you have a question, please don't hesitate to ask.
+
+One of the main advantages of being a student in this course is that you can get help from experts easily. So let's make it clear how you can get help in two parts:
+
+First, _where_ to ask questions, and second, _how_ to ask questions.
+
+Let's start with the first part - where to ask questions.
 
 There are two places where you can ask questions.
 
