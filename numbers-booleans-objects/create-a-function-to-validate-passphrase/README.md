@@ -29,10 +29,10 @@ So just to give you an example on how to complete a function, imagine the functi
  
   _ACTION: Show how to write a code that validates whether length of a string is greater than 5._
 
-
-    let result = text.length > 5;
-    return result;
-
+  ```js
+      let result = text.length > 5;
+      return result;
+  ```
   So that's all about checking whether the length of a string is greater than 5.
 
 In a similar fashion, you are expected to code out the way you would validate the input `text` and return the boolean value based on the validity of the passphrase.
