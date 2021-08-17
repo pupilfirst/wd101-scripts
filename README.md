@@ -45,6 +45,10 @@ This work is licensed under a
 1. [Putting HTML and JS together](./working-with-strings/putting-html-and-js-together)
 2. [Adding comments to HTML and JS](./working-with-strings/adding-comments-to-html-and-js)
 
+## L5. Numbers, Booleans, Objects & Arrays
+
+1. [Task: Create a function to validate passphrase](./numbers-booleans-objects/create-a-function-to-validate-passphrase)
+
 ## L6. Functions
 
 1. [Need additional help?](./functions/need-additional-help)
