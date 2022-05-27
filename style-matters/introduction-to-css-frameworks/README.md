@@ -17,6 +17,8 @@ With a CSS framework, you only have to code the HTML with accurate classes, stru
 1. First, you can quickly create a user-friendly and visually appealing User Interface.
 2. CSS frameworks make it simple to create websites that are compatible with multiple browsers and browser versions.
 3. Teams with multiple developers, especially larger ones, can really appreciate the standards that a CSS framework brings to the table.
+4. It enforces good web design habits
+5. It gives you clean and symmetrical layouts
 
 ### Popular CSS frameworks:
 
