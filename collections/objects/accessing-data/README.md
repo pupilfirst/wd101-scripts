@@ -2,9 +2,9 @@
 
 In this lesson, we will learn how to access data from a JavaScript object.
 
-> Action: Open the JavaScript file from previous lesson.
+> Action: Open the JavaScript file from the previous lesson.
 
-_TODO:_ Need to update the example based on Avishek's example, once his script for previous lessons are complete.
+_TODO:_ Need to update the example based on Avishek's example once his script for previous lessons is complete.
 
 > Action: Add the following example.
 
@@ -16,7 +16,7 @@ const iPhone13 = {
 };
 ```
 
-We can access data from an object in number of ways. Let's start with the `dot` syntax.
+We can access data from an object in several ways. Let's start with the `dot` syntax.
 
 > Action: write `console.log(iPhone13.make);`
 
@@ -26,7 +26,7 @@ console.log(iPhone13.make); // Apple
 
 It will print `Apple` onto the developer console.
 
-Next way to access the data is by using the string value. We do that by enclosing the key in between square brackets `[` and `]`.
+The next way to access the data is by using the string value. We enclose the key in between square brackets `[` and `]`.
 
 > Action: Write `console.log(iPhone13["model"]);`
 
@@ -43,15 +43,15 @@ const modelKey = "model";
 console.log(iPhone13[modelKey]); // iPhone 13
 ```
 
-If we save the file and reload the page, we can see the same text as before.
+If we save the file and reload the page, we can see the exact text.
 
 ## Conclusion
 
-In this lesson we learnt how to access data from a JavaScript object. We can either use the `dot` syntax or we can make use `key` wrapped between `[` and `]` to access the value.
+In this lesson, we learnt how to access data from a JavaScript object. We can use the `dot` syntax or the `key` wrapped between `[` and `]` to access the value.
 
 # Text
 
-We can access data from an object in following ways:
+We can access data from an object in the following ways:
 
 - Dot syntax
 
@@ -75,7 +75,7 @@ const iPhone13 = {
 console.log(iPhone13["make"]); // prints Apple.
 ```
 
-We can also use a variable instead of the key.
+We can also use a variable instead of a string value.
 
 ```javascript
 const makeKey = "make";
