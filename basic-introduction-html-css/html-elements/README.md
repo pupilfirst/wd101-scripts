@@ -42,7 +42,7 @@ HTML elements are available for almost all of the use cases. HTML comes with `<l
 
 >Action: open https://developer.mozilla.org/en-US/docs/Web/HTML/Element and highlight various HTML elements available.
 
-You can see there are 100+ HTML elements available. We should make sure we use the right element for the proper usage.
+You can see there are 100+ HTML elements available for us to work with. We should make sure we use the right element based on HTML standards.
 
 
 #Text
