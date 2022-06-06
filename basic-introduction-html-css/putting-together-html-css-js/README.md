@@ -12,7 +12,7 @@ We can also use the `<style>` element to include CSS in our web page.
 
 We can remove the inline `style` attribute from the `<h1>`. Let's save the file and refresh our page. The heading is styled the same as before.
 
-But this is not how we do it in web development. We instead write the styling rules in a separate file and then link it with our HTML. We do that so using the `<link>` element.
+A better approach to web development, is to write the styling rules in a separate file and then link it with our HTML. We do that using the `<link>` element.
 
 Let's first create a file and name it `index.css`.
 
