@@ -147,9 +147,9 @@ The href attribute of the <link> element needs to reference a file on your file 
 
 The advantage of this approach is, you can define all of your styling rules in a single CSS file, and link it to multiple webpages. This will keep your web interface consistent, and you will save a lot of time.
 
-So, this is the recommended approach or writing CSS.
+So, this is the recommended approach for writing CSS.
 
 ### To summarize,
 
-CSS or Cascading stylesheets are used to style the webpages, and we've learned that there are three different way to add CSS to an HTML file, and the external stylesheet is the recommended approach.
+CSS or Cascading Style Sheets are used to style the webpages, and we've learned that there are three different way to add CSS to an HTML file, and the external stylesheet is the recommended approach.
 In the next lesson, we will continue our CSS journey. See you there.
