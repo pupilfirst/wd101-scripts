@@ -1,8 +1,7 @@
-# Script
+# Text
+We already know that, the **properties** are the most important part of any JavaScript object. They are the values associated with an object.
 
-We've already learned that, the **properties** are the most important part of any JavaScript object. Properties are the values associated with an object.
-
-And in this lesson, we will learn to add, update and delete properties of an Javascript Object.
+Here, we will learn to add, update and delete properties of an Javascript Object.
 
 ### Adding New Properties
 There’re a few ways to add properties to an object in JavaScript. You can add new properties to an existing object by simply giving it a value.
@@ -13,16 +12,15 @@ Assume that you've a a *employee* object that already exists. One way is to add 
   employee.department = "Software";
 ```
 
-We added the *department* property to the *employee* object above with value **Software**.
+We've added the *department* property to the *employee* object above with value **Software**.
 
-We can also add a property by using the bracket notation:
+We can also add a property, by using the bracket notation:
 
 ```js
 employee['department'] = "Software";
 ```
 
 It does the same thing as the previous example, but we can have invalid property identifiers in the string.
-
 
 ```js
 employee['department-name'] = "Software";
