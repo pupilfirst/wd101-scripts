@@ -2,7 +2,7 @@ In this lesson, we're going to learn about **Web Browsers**, a common term which
 
 ### What is web browser?
 
-We use web browsers like Google Chrome, Mozilla Firefox, Microsoft Edge and Apple Safari every day, but do we understand what they are? 
+We use web browsers like Google Chrome, Mozilla Firefox and Microsoft Edge every day, but do we understand what they are? 
 
 A **Web Browser** is nothing but a software application, which is used to access the information available on the internet. When a user like you and me requests some information, the web browser fetches the data from a web server and then displays the response on your desktop or mobile device. The information is transferred using the **Hypertext Transfer Protocol (HTTP)**, which defines how text, images and video are transmitted on the web.
 
