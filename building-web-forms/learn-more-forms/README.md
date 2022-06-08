@@ -1,10 +1,10 @@
 # Text
 
-> This is optional reading. In this target we'll link you to external documentation that you can look at if you want to. Do that only if you are curious and have the time to spare. Otherwise you can safely skip this chapter.
+> This is optional reading. In this target, we'll link you to external documentation that you can look at if you want to. Do that only if you are curious and have the time to spare. Otherwise, you can safely skip this chapter.
 
 ## References
 
-Here are a few references for the HTML Forms related specifications and documentations. These contain details about all the HTML Form and Form controls.
+Here are a few references for the HTML Forms related specifications and documentation. These contain details about all the HTML Forms and Form controls.
 
 1. [W3C HTML Form Specification](https://html.spec.whatwg.org/multipage/forms.html#forms)
 2. [Mozilla HTML Forms Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
