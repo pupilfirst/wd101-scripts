@@ -6,7 +6,7 @@ But at one point you would find that, writing CSS rules for a large scale projec
 So instead of doing that, we're going to jump ahead a bit, and want show you, what a lot of professional developers do these days - which is to use CSS frameworks that makes styling much simpler.
 
 # Script
-In the previous lesson, we will learn about:
+In this lesson, we will learn about:
 
 ### what is a CSS Framework?
 In essence, a CSS framework consists several CSS stylesheets ready for use by web developers and designers like you and me. These stylesheets helps us to quickly add web design functions to our HTML, such as: setting colors, layout, fonts, navbars, etc.
