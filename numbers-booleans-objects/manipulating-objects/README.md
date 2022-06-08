@@ -90,7 +90,7 @@ Object.freeze(user1);
 user1.name = 'Jana';
 console.log(user1.name) //"Avishek"
 
-console.log(Object.isFrozen(user1)) // ture
+console.log(Object.isFrozen(user1)) // true
 ```
 
 ### Sealing an object: Object.seal()
