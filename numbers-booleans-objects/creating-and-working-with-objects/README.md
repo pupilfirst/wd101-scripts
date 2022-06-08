@@ -4,7 +4,7 @@ In this lesson, we will learn about JavaScript Objects.
 In JavaScript, an object is a very powerful concept, and you are going to work with them all the time. So, let's get started.
 
 ### Overview 
-A JavaScript object is a collection of named values. Like many other programming languages, it can be compared to objects in real life. Compare it with a *cup*, for example. A *cup* is an object that has various properties. A cup has a color, a design, weight, a material it is made of. In the same way, JavaScript objects can have properties, which define their characteristics.
+A JavaScript object is a collection of named values. Like many other programming languages, it can be compared to objects in real life. Compare it with a *cup*, for example. A *cup* is an object that has various properties. A cup has a color, a design, weight, the material it is made of etc. In the same way, JavaScript objects can have properties, which define their characteristics.
 
 ### Objects & Properties
 The properties of an object define the characteristics of the object. Object properties are basically the same as ordinary JavaScript variables, except their attachment to the objects. You access the properties of an object with a simple dot-notation:
