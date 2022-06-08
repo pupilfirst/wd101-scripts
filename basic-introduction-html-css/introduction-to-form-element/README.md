@@ -1,4 +1,4 @@
-In this video, we will learn about HTML Form element and how it is used to collect User input in web pages.
+In this video, we will learn about HTML Form element and how it is used to collect user input in web pages.
 
 The HTML `form` element is used to create an HTML form for user input. It is used as a container for elements such as text fields, checkboxes, radio buttons and submit buttons.
 
