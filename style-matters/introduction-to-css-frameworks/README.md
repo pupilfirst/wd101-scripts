@@ -1,14 +1,14 @@
-In the previous lesson, we added classes to a CSS file, and used them in the HTML file.
+# Text
+Previously, we've learn to add classes to a CSS file, and later used them in the HTML. It's always recommended to use external CSS files to avoide repetition in our code.
 
-I've mentioned that this is helpful in avoiding repetition in our code.
+But at one point you would find that, writing CSS rules for a large scale project, would take a lot of time.
 
-Now in most courses that you might have seen before, you would be taught how to write more CSS, what more of these properties do, etc.
+So instead of doing that, we're going to jump ahead a bit, and want show you, what a lot of professional developers do these days - which is to use CSS frameworks that makes styling much simpler.
 
-That would take a lot of time. Also, there are plenty of resources online that can teach you all about the different CSS properties that exist.
+# Script
+In the previous lesson, we will learn about:
 
-So instead of that, we're going to jump ahead a bit, and want show you, what a lot of professional developers do these days - which is to use CSS frameworks that makes styling much simpler.
-
-### So what is a CSS Framework?
+### what is a CSS Framework?
 In essence, a CSS framework consists several CSS stylesheets ready for use by web developers and designers like you and me. These stylesheets helps us to quickly add web design functions to our HTML, such as: setting colors, layout, fonts, navbars, etc.
 
 With a CSS framework, you only have to code the HTML with accurate classes, structure, and IDs to set up a web page. The framework already has built-in classes for common web elements like – buttons, cards, slider, navigation bar, column-based layouts, etc.
