@@ -1,14 +1,14 @@
-In the previous lesson, we added classes to a CSS file, and used them in the HTML file.
+# Text
+Previously, we've learn to add classes to a CSS file, and later used them in the HTML. It's always recommended to use external CSS files to avoide repetition in our code.
 
-I've mentioned that this is helpful in avoiding repetition in our code.
+But at one point you would find that, writing CSS rules for a large scale project, would take a lot of time.
 
-Now in most courses that you might have seen before, you would be taught how to write more CSS, what more of these properties do, etc.
+So instead of doing that, we're going to jump ahead a bit, and want show you, what a lot of professional developers do these days - which is to use CSS frameworks that makes styling much simpler.
 
-That would take a lot of time. Also, there are plenty of resources online that can teach you all about the different CSS properties that exist.
+# Script
+In this lesson, we will learn about:
 
-So instead of that, we're going to jump ahead a bit, and want show you, what a lot of professional developers do these days - which is to use CSS frameworks that makes styling much simpler.
-
-### So what is a CSS Framework?
+### what is a CSS Framework?
 In essence, a CSS framework consists several CSS stylesheets ready for use by web developers and designers like you and me. These stylesheets helps us to quickly add web design functions to our HTML, such as: setting colors, layout, fonts, navbars, etc.
 
 With a CSS framework, you only have to code the HTML with accurate classes, structure, and IDs to set up a web page. The framework already has built-in classes for common web elements like – buttons, cards, slider, navigation bar, column-based layouts, etc.
@@ -26,6 +26,8 @@ I can’t think of a conversation about CSS frameworks that wouldn’t include B
 2. **Massive Ecosystem:** Among front-end frameworks, Bootstrap’s ecosystem is unmatched. It offers, out of the box, a vast library of layouts, themes, UI elements, panels, modals, buttons, alerts, cards, etc., that devs and designers can choose from and implement. 
 3. Bootstrap is easily customizable.
 
+Bootstrap website Link: http://getbootstrap.com/
+
 #### Tailwind CSS
 **“Most CSS frameworks do too much”** — Tailwind‘s motto clearly explains why it’s a lightweight framework that offers freedom to developers. It doesn’t come with a specific set of design elements, but rather allows you to implement your own unique style faster.
 **Reasons to Use Tailwind**
@@ -33,6 +35,7 @@ I can’t think of a conversation about CSS frameworks that wouldn’t include B
 2. It comes with commonly used *Utility Patterns* to deal with standard requirements: specifying and organizing classes, cascading classes, etc.
 3. Even though Tailwind doesn’t include any pre-designed components, it allows you to create your own custom components that you can reuse throughout your projects. 
 
+Tailwind website Link: https://tailwindcss.com/
 **To conclude**
 
 There are a lot other CSS frameworks available in the market today, suck as: Foundation, Bulma, Miligram, Materialize etc. Some of them offer pre-made components, some only provide utility classes and don’t offer styling. In one way or another, they all helps us to boost our productivity.
