@@ -1,6 +1,6 @@
 # Text
 
-Forms in HTML are a very powerful tool for interacting with users — most commonly they are used for collecting data from users, or allowing them to control a web application.
+Forms in HTML are a very powerful tool for interacting with the users — most commonly they are used for collecting data, or allowing users to control a web application.
 
 HTML forms are required when you want to collect some data from the person who visits your website. For example, when you register/login for applications like Gmail, Netflix, or Facebook, you enter information like Name, Email, and Password through HTML forms.
 
