@@ -80,4 +80,11 @@ const formState = {
 };
 // convert JSON Object to string representation
 const stringifiedFormState = JSON.stringify(formState);
+
+localStorage.setItem('form-state', stringifiedFormState);
+
+// retrieve the data from localStorage
+const retrievedData = localStorage.getItem('form-state');
+
+console.log(JSON.parse(retrievedData));
 ```
