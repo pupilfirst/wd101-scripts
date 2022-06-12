@@ -12,6 +12,8 @@ In this lesson, we will create our first form using the HTML `form` element.
 
 ![Demo Form](sample_user_form.png)
 
+## Script
+
 First, let us create a `form` element as a wrapper for all the controls we build for this HTML Form.
 
 > Action: Open an editor and create a form element as below
