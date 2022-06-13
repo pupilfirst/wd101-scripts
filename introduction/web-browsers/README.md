@@ -1,8 +1,12 @@
+# Text 
+We all use web browsers like Google Chrome, Mozilla Firefox and Microsoft Edge every day, but do we understand what they are? 
+
+Let's find out, what made the web browsers, one of the most used software application in today's world.
+
+# Script
 In this lesson, we're going to learn about **Web Browsers**, a common term which is frequently used by people while discussing the Internet. 
 
 ### What is web browser?
-
-We use web browsers like Google Chrome, Mozilla Firefox, Microsoft Edge and Apple Safari every day, but do we understand what they are? 
 
 A **Web Browser** is nothing but a software application, which is used to access the information available on the internet. When a user like you and me requests some information, the web browser fetches the data from a web server and then displays the response on your desktop or mobile device. The information is transferred using the **Hypertext Transfer Protocol (HTTP)**, which defines how text, images and video are transmitted on the web.
 
@@ -18,7 +22,7 @@ It uses a piece of software called a **rendering engine** to translate that data
 
 ### History of the web browser
 The first web browser, **WorldWideWeb** was created in the year of 1990 by Tim Berners-Lee. 
-Through, it was completely different from the World Wide Web we use today.
+Though, it was completely different from the World Wide Web we use today.
 
 In 1993, a new browser Mosaic was revealed by Mark Andressen and their team. It was the first browser to display text and images at a time on the device screen. 
 Later in 1994, he also created another browser called, **Netscape**. 
