@@ -1,4 +1,4 @@
-If you followed along with the last couple of lessons, then you have with you the _framework_ to create an interesting little project of your own.
+If you followed along with the last couple of lessons, then you have the _framework_ with you, to create an interesting little project of your own.
 
 ## Complete this course by building a personal website
 
@@ -44,7 +44,7 @@ If you haven't used Github before, sign up now. Github is the world's leading co
 
 ## After you submit your work here
 
-This part is optional, but we recommend that you show off your customized project by sharing its link on the Discord community. Tell everyone what you learned, what worked, and what didn't.
+This part is optional, but we recommend that you show off your customized project by sharing its link on the Discord community. Tell everyone what you have learned, what worked, and what didn't.
 
 ## Solutions for common issues
 
@@ -52,10 +52,10 @@ This part is optional, but we recommend that you show off your customized projec
 
 A common issue that occurs when you host using Github Pages is that you might find that your website isn't loading the images, CSS, or JS that you've placed in your repository.
 
-This is probably happening because of _root_ path of your website is different from when you were trying out your website locally.
+This is probably happening because of _root_ path of your website is different from your local instance.
 
 Start by watching the video explaining _absolute & relative file paths_ in the following target: https://www.pupilfirst.school/targets/11352
 
 Once you've gone through that, pay close attention to the _root_ path of your website. If you have a Github repository named `my-website`, then Github Pages will host it at a URL that looks like `username.github.io/my-website`. Now, if your website's code refers to an image at the path `/images/idle.png`, then it's going to try to load `username.github.io/images/idle.png`, which is the wrong URL.
 
-Instead, now that your website is hosted on a sub-folder (and not the _root_ of the domain), you'll want to update your code to using a path relative to the _current_ folder. To do so, simply remove leading slashes from the asset paths. i.e., `images/idle.png` may work where `/images/idle.png` does not.
+Instead, now that your website is hosted on a sub-folder (and not the _root_ of the domain), you would have to update your code to use a path relative to the _current_ folder. To do so, simply remove leading slashes from the asset paths. i.e., `images/idle.png` may work, where `/images/idle.png` does not.
