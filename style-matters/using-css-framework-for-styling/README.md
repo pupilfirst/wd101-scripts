@@ -2,25 +2,25 @@
 Previously, we've learned 
 - *What is a CSS framework?* 
 - *What are the advantages of using one?*
-- And *What are the popular frameworks available in the market today?*.
+- And *what are the popular frameworks available in the market today?*.
 
-I've also mentioned that, how a CSS framework can boost our productivity, with it's ready-to-use UI components and utility classes.
+We've also talked about how a CSS framework can boost our productivity, with it's ready-to-use UI components and utility classes.
 
-So, in this lesson, let's find out:
+So, in this lesson, let's find out how to use a CSS framework.
 
 ## How to add a CSS framework to any HTML project?
 There are number of different ways to use a CSS framework in a web application. In this lesson, we will focus only on the most convenient ones.
 
 ### Method 1: Using a Content Delivery Network or CDN
 
-A CDN is a group of interconnected computers, that are distributed around the globe. Their goal is to provide your data or file or content from the nearest possible location, from where you are sitting right now. Whether we know it or not, every one of us interacts with CDNs on a daily basis, when reading articles on news sites, shopping online or watching YouTube videos.
+A CDN is a group of interconnected computers, that are distributed around the globe. Their goal is to provide your data or file or content from the nearest possible location, from where you are sitting right now. Whether we know it or not, every one of us interact with CDNs on a daily basis, when reading articles on news sites, shopping online or watching YouTube videos.
 
 All modern CSS frameworks have uploaded their stable releases to these CDNs. You only need to include their compiled CSS and JS file to your HTML webpage.
 
 #### For Bootstrap
-As I said in previous lesson, Bootstrap is one of the most popular CSS, HTML, and JavaScript framework that exists today.
+As we saw in the previous lesson, Bootstrap is one of the most popular CSS, HTML, and JavaScript framework that exists today.
 
-Using the Bootstrap CDN is a great way to deliver the content to your users, quickly and efficiently, based on their geographic location. To link Bootstrap in HTML using this method:
+Using the Bootstrap CDN is a great way to deliver the content to your users, quickly and efficiently, based on their geographic location. To link Bootstrap in HTML you can use this method:
 
 Just copy this stylesheet `link` tag to the `<head>` of your HTML file.
 
