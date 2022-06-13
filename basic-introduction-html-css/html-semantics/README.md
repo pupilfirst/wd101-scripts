@@ -12,7 +12,7 @@ We can make a text wrapped by `<span>` look like a heading, but it doesn't have 
 
 Using the correct element for its intended usage has its benefits.
 
-An adequately structured web page can help a search engine extract essential keywords. It can act as a signpost for screen readers to help navigate a page for visually impaired users.
+An adequately structured web page can help a search engine (such as: Google, Yahoo or Bing), extract essential keywords. It can act as a signpost for screen readers to help navigate a page for visually impaired users.
 
 We should code HTML to represent the data that will be populated and not based on its default presentation styling. We can change the presentation styling using _Cascading Style Sheet_.
 
@@ -38,7 +38,35 @@ We have many such semantic HTML elements available.
 
 > Action: open https://developer.mozilla.org/en-US/docs/Glossary/Semantics and highlight the different elements available.
 
-Here you can see that we have elements like `<nav>` which should be used to provide navigation links.
+Here you can see that we have elements like `<nav>` which should be used to provide navigation links. Another element we have is `<section>`, which can be used to represent a generic standalone section of a document. `<section>` should always have a heading.
+
+> Action: write a section with heading.
+
+```html
+<h1>Learning HTML</h1>
+<section>
+  <h2>Introduction</h2>
+  <p>This document acts as a guide to master HTML</p>
+</section>
+```
+
+Another element we can use to represent a self-contained text is `<article>`. We can create and `<article>` with one or more `<section>` within it.
+
+> Action: write the following example.
+
+```html
+<article>
+  <h1>Reviews</h1>
+  <section>
+    <h4>Simple to understand</h4>
+    <p>HTML is simple to understand</p>
+  </section>
+  <section>
+    <h4>Easy to learn</h4>
+    <p>Very easy to learn HTML</p>
+  </section>
+</article>
+```
 
 ## Conclusion
 
