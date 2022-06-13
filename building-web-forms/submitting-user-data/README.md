@@ -20,11 +20,11 @@ The HTML form we create is a user-friendly way to configure an HTTP request to s
 
 The `form` element defines how the data will be sent to the web server. All of its attributes are designed to let you configure the request to be sent when a user clicks a submit button.
 
-The two most important attributes of a form element are `action` and `method`.
+The two most important attributes of a `form` element are `action` and `method`.
 
 ### `action` attribute
 
-The `action` attribute defines where the data gets sent. Its value must be a valid URL. If this attribute isn't provided, the data will be sent to the URL of the page containing the form — the current page.
+The `action` attribute defines where we would like to send the data. Its value must be a valid URL. If this attribute isn't provided, the data will be sent to the URL of the page containing the form — the current page.
 
 ```js
 
