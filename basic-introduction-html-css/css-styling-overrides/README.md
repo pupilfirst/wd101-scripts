@@ -1,19 +1,20 @@
 # Text
 We already know that, in any HTML project, there are three different places where we can write our CSS rules:
-1. along with the HTML elements, as inline styles.
-2. inside HTML `HEAD`, using the `<style>` tag, as an internal style sheet.
-3. by creating an external CSS file and later linking it with the HTML using the `link` tag.
 
-Now the question is, what if we define different CSS rules for a single HTML element, in all of these three places? Then which one would be applied and finally visible in browser? Let's find out.
+1. Along with the HTML elements, as inline styles.
+2. Inside HTML `HEAD`, using the `<style>` tag, as an internal style sheet.
+3. By creating an external CSS file and later linking it with the HTML using the `link` tag.
+
+Now the question is, what if we define different CSS rules for a single HTML element, in all of these three places? Then which one would be applied and finally be visible in the browser? Let's find out.
 
 # Script
 
-Hey there, in this lesson we will learn two very key concepts of CSS - the concept of Order and Inheritance.
+Hey there, in this lesson we will learn two key concepts of CSS - the concept of Order and Inheritance.
 
 ### Cascading order
-The term **cascading** means hierarchical order in which different style sheet types interact when two styles come into conflict. The conflict occurs when two different styles are applied to the same element.
+The term **cascading** means a hierarchical order in which different style sheet types interact when two styles come into conflict. The conflict occurs when two different styles are applied to the same element.
 
-For these kind of cases, there is an order for stylesheets according to their priority.
+For these kind of cases, there is an order for style sheets according to their priority,
 - Browser Defaults.
 - External Style Sheets (Linked or Imported).
 - Internal Style Sheets (Embedded).
