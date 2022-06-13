@@ -1,9 +1,9 @@
 # Script
 
-In this video, we will save the data collected from user in client side using Web Storage APIs available in HTML5. Since we would like to persist the data even after the browser is closed, we should use `LocalStorage`.
+In this video, we will learn to save the data collected from the user form, in the browser itself, using the Web Storage APIs available in HTML5. Since we would like to persist the data even after the browser is closed, we should use `LocalStorage`.
 
 We are collecting `name`, `email`, `password`, `date of birth` and `age group` in our `user form`.
-We will now add a `save` button to persist these data to the LocalStorage.
+We will now add a `save` button to save and persist these data to the LocalStorage.
 
 > Action: Add a button with type submit to the user form.
 
@@ -67,7 +67,7 @@ loadButton.addEventListener("click", function () {
 
 Let's close the browser and open the file again. Now if we click on the load button, we can see that the data is getting populated correctly.
 
-So in this lesson, we learned how to user localStorage API to persist data in client side and load it back when needed.
+So in this lesson, we've learned, how to store and persist user data in client side (browser) using the localStorage API. We've also learned, to load the data stored from the localStorage, when needed.
 
 # Text
 
