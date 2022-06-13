@@ -1,7 +1,7 @@
 # Text
 We already know that, in any HTML project, there are three different places where we can write our CSS rules:
-1. along with the HTML elements, as inline styles
-2. inside HTML `HEAD`, using the `<style>` tag, as internal stylesheet
+1. along with the HTML elements, as inline styles.
+2. inside HTML `HEAD`, using the `<style>` tag, as an internal style sheet.
 3. by creating an external CSS file and later linking it with the HTML using the `link` tag.
 
 Now the question is, what if we define different CSS rules for a single HTML element, in all of these three places? Then which one would be applied and finally visible in browser? Let's find out.
@@ -11,7 +11,7 @@ Now the question is, what if we define different CSS rules for a single HTML ele
 Hey there, in this lesson we will learn two very key concepts of CSS - the concept of Order and Inheritance.
 
 ### Cascading order
-The term **cascading** means hierarchical order in which different stylesheet types interact when two styles come into conflict. The conflict occurs when two different styles are applied to the same element.
+The term **cascading** means hierarchical order in which different style sheet types interact when two styles come into conflict. The conflict occurs when two different styles are applied to the same element.
 
 For these kind of cases, there is an order for stylesheets according to their priority.
 - Browser Defaults.
@@ -142,9 +142,9 @@ As we can see, the **Class** was placed after the **ID**, but the **ID** still t
 
 Here, the **Class** selector overrode the **ID** selector, because it was the last used one. An **ID** selector only takes precedence over a **Class** selector if they are both used in the same element.
 
-#### The use of **important!**
+#### The use of **!important**
 
-An **!Important** declaration is a great way to override the styles you want. When an **important** rule is used on a style declaration, this declaration will override any other declarations. Let’s see how you can use the !important declaration to override inline styles.
+An **!important** declaration is a great way to override the styles you want. When an **!important** rule is used on a style declaration, this declaration will override any other declarations. Let’s see how you can use the `!important` declaration to override inline styles.
 
 > Action: Open VS Code
 ````
