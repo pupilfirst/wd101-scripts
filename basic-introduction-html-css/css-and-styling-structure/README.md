@@ -6,11 +6,11 @@ The web would be a boring place if all websites looked like that. Using CSS, you
 
 # Script
 
-In this lesson, we will learn about what CSS is and how we can use it in our webpages.
+In this lesson, we will learn about what CSS or Cascading Style Sheets is and how we can use it in our webpages.
 
 ### What is CSS?
 
-While HTML is used to define the structure and semantics of your content, CSS or Cascading stylesheets allows you to create great-looking web pages. You can use CSS to change the font, color, size, and spacing of your content. You can also split it into multiple columns, or add animations and other decorative features.
+While HTML is used to define the structure and semantics of your content, CSS or Cascading Style Sheets allows you to create great-looking web pages. You can use CSS to change the font, color, size, and spacing of your content. You can also split it into multiple columns, or add animations and other decorative features.
 
 ### CSS syntax
 
@@ -28,9 +28,9 @@ h1 {
 1. In this example, the CSS rule starts with a selector . It selects the HTML element that we are going to style. In this case, we are styling level one heading.
 2. Then inside the curly braces, we've made two declarations, in **property** and **value** pair. We've defined *color* property to be *red* and *font-size* property to be of *32px*.
 
-Every CSS property have a different set of allowable values. 
+Every CSS property has a different set of allowable values. 
 
-A CSS stylesheet will contain many such rules, written one after the other. Like:
+A CSS style sheet will contain many such rules, written one after the other. Like:
 
 ````
 h1 {
@@ -50,10 +50,10 @@ Well, the very first thing we need to do, is to tell the HTML document that we h
 
 #### Adding CSS to HTML document
 
-There are three different ways to apply CSS to an HTML document
+There are three different ways to apply CSS to an HTML document:
 1. with inline styles
-2. with an internal stylesheet
-3. with an external stylesheet
+2. with an internal style sheet
+3. with an external style sheet
 
 > Action: Open VS Code and add this plain HTML code
 ````
@@ -80,12 +80,12 @@ The very first way to add CSS to HTML elements is by writing **Inline CSS**.
     </head>
     <body>
       <h1 style="color: blue; font-size: 36px">Hello World!</h1>
-      <p style="color:red;">Trying CSS for first time</p>
+      <p style="color:red;">Trying CSS for the first time</p>
     </body>
   </html>
 ````
 
-It works, but now imagine, that if we would build a large scale application, using **Inline CSS**, the website's HTML files are going to look like really messy.
+It works, but now imagine that if we would build a large scale application, using **Inline CSS**, the website's HTML files are going to look really messy.
 
 And another thing, what if I had a bunch of **header** tags throughout my website, and I have to change all of its *color* from *blue* to *red*? It will be an irritating task, right? 
 
@@ -143,13 +143,14 @@ An external stylesheet contains CSS in a separate file with a .css extension. Th
   </html>
 ````
 
-The href attribute of the <link> element needs to reference a file on your file system. In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the path. 
+The `href` attribute of the `<link>` element needs to reference a file on your file system. In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the path. 
 
-The advantage of this approach is, you can define all of your styling rules in a single CSS file, and link it to multiple webpages. This will keep your web interface consistent, and you will save a lot of time.
+The advantage of this approach is, you can define all of your styling rules in a single CSS file and link it to multiple webpages. This will keep your web interface consistent, and you will save a lot of time.
 
 So, this is the recommended approach for writing CSS.
 
 ### To summarize,
 
-CSS or Cascading Style Sheets are used to style the webpages, and we've learned that there are three different way to add CSS to an HTML file, and the external stylesheet is the recommended approach.
+CSS or Cascading Style Sheets is used to style the webpages. We've learned that there are three different ways to add CSS to an HTML file, and the external stylesheet is the recommended approach.
+
 In the next lesson, we will continue our CSS journey. See you there.
