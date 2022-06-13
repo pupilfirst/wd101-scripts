@@ -1,6 +1,6 @@
 # Script
 
-In this video, we will take a look at the semantics of HTML. In programming, semantics refers to the meaning conveyed.
+In this video, we will take a look at the semantics of HTML. In programming, semantics refers to the meaning of a piece of code.
 
 > Action: highlight the HTML code that we wrote previously.
 
