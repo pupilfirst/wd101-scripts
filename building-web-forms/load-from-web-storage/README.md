@@ -59,6 +59,10 @@ loadButton.addEventListener("click", function () {
     document.getElementById("email").value = parsedUserDetails.email;
     document.getElementById("password").value = parsedUserDetails.password;
     document.getElementById("dob").value = parsedUserDetails.dob;
+
+    const ageGroupSelector =
+      'input[name="agegroup"][value="' + parsedUserDetails.ageGroup + '"]';
+    document.querySelector(ageGroupSelector).checked = true;
   }
 });
 ```
@@ -81,10 +85,10 @@ const formState = {
 // convert JSON Object to string representation
 const stringifiedFormState = JSON.stringify(formState);
 
-localStorage.setItem('form-state', stringifiedFormState);
+localStorage.setItem("form-state", stringifiedFormState);
 
 // retrieve the data from localStorage
-const retrievedData = localStorage.getItem('form-state');
+const retrievedData = localStorage.getItem("form-state");
 
 console.log(JSON.parse(retrievedData));
 ```
