@@ -4,12 +4,12 @@ Previously, we've learned
 - *What are the advantages of using one?*
 - And *What are the popular frameworks available in the market today?*.
 
-I've also mentioned that, how a CSS framework can be useful to boost our productivity, with it's ready-to-use UI components and utility classes.
+I've also mentioned that, how a CSS framework can boost our productivity, with it's ready-to-use UI components and utility classes.
 
 So, in this lesson, let's find out:
 
 ## How to add a CSS framework to any HTML project?
-There are number of different ways to use a CSS framework in a web application. In this sellon, we will focus only on the most convenient ones.
+There are number of different ways to use a CSS framework in a web application. In this lesson, we will focus only on the most convenient ones.
 
 ### Method 1: Using a Content Delivery Network or CDN
 
