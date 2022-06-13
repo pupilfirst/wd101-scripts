@@ -1,17 +1,17 @@
 # Text
-Previously, we've learn to add classes to a CSS file, and later used them in the HTML. It's always recommended to use external CSS files to avoide repetition in our code.
+Previously, we've learnt how to add classes to a CSS file and use them in the HTML file. It's always recommended to use external CSS files to avoid repetition in our code.
 
-But at one point you would find that, writing CSS rules for a large scale project, would take a lot of time.
+But at one point you would find that writing CSS rules for a large scale project takes a lot of time.
 
-So instead of doing that, we're going to jump ahead a bit, and want show you, what a lot of professional developers do these days - which is to use CSS frameworks that makes styling much simpler.
+So instead of doing that, we're going to jump ahead a bit, and show you what a lot of professional developers do these days - which is to use CSS frameworks that makes styling much simpler.
 
 # Script
-In this lesson, we will learn about:
+In this lesson, we will learn about CSS framworks.
 
-### what is a CSS Framework?
-In essence, a CSS framework consists several CSS stylesheets ready for use by web developers and designers like you and me. These stylesheets helps us to quickly add web design functions to our HTML, such as: setting colors, layout, fonts, navbars, etc.
+### What is a CSS Framework?
+In essence, a CSS framework consists of several CSS style sheets ready for use by web developers and designers like you and me. These style sheets helps us to quickly add web design functions to our HTML, such as: setting colors, layout, fonts, navbars, etc.
 
-With a CSS framework, you only have to code the HTML with accurate classes, structure, and IDs to set up a web page. The framework already has built-in classes for common web elements like – buttons, cards, slider, navigation bar, column-based layouts, etc.
+With a CSS framework, you only have to code the HTML with accurate classes, structure, and IDs to set up a web page. The framework already has built-in classes for common web elements like – buttons, cards, slider, navigation bar, column-based layouts, and so on.
 
 ### Now, what are the advantages of using CSS Framework?
 1. First, you can quickly create a user-friendly and visually appealing User Interface.
@@ -22,7 +22,7 @@ With a CSS framework, you only have to code the HTML with accurate classes, stru
 
 #### Bootstrap
 I can’t think of a conversation about CSS frameworks that wouldn’t include Bootstrap. Twitter introduced the framework in 2011 to make responsive web design easily accessible to developers. Here are some reasons why you should consider using it in your projects.
-1. **Most popular frontend framework:** Bootstrap is among the most popular open source projects in existence.
+1. **Most popular front-end framework:** Bootstrap is among the most popular open source projects in existence.
 2. **Massive Ecosystem:** Among front-end frameworks, Bootstrap’s ecosystem is unmatched. It offers, out of the box, a vast library of layouts, themes, UI elements, panels, modals, buttons, alerts, cards, etc., that devs and designers can choose from and implement. 
 3. Bootstrap is easily customizable.
 
@@ -38,9 +38,9 @@ Bootstrap website Link: http://getbootstrap.com/
 Tailwind website Link: https://tailwindcss.com/
 **To conclude**
 
-There are a lot other CSS frameworks available in the market today, suck as: Foundation, Bulma, Miligram, Materialize etc. Some of them offer pre-made components, some only provide utility classes and don’t offer styling. In one way or another, they all helps us to boost our productivity.
+There are a lot other CSS frameworks available in the market today such as: Foundation, Bulma, Miligram, Materialize etc. Some of them offer pre-made components, some only provide utility classes and don’t offer styling. In one way or another, they all help us to boost our productivity.
 
-So, Choosing a framework with a high level of community support, such as Bootstrap or Foundation, is a safe choice since the large community supports the project.
+So, choosing a framework with a high level of community support, such as Bootstrap or Foundation, is a safe choice since the large community supports the project.
 
 But on the other hand, since many frameworks become bloated over time, newer and better options start emerging. Tailwind is one of them as is focuses on improving coding productivity while maintaining a small size and a very specific set of features.
 
