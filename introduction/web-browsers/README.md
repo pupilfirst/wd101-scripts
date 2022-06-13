@@ -22,7 +22,7 @@ It uses a piece of software called a **rendering engine** to translate that data
 
 ### History of the web browser
 The first web browser, **WorldWideWeb** was created in the year of 1990 by Tim Berners-Lee. 
-Through, it was completely different from the World Wide Web we use today.
+Though, it was completely different from the World Wide Web we use today.
 
 In 1993, a new browser Mosaic was revealed by Mark Andressen and their team. It was the first browser to display text and images at a time on the device screen. 
 Later in 1994, he also created another browser called, **Netscape**. 
