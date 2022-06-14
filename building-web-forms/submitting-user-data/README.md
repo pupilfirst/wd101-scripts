@@ -2,11 +2,11 @@
 
 In this lesson, we will learn about what happens when a user submits a form. We will also learn about where the data goes, and how we can check, what data is sent to the web server.
 
-First, we'll discuss what happens to the data when we submit a form. To understand that, we need to have an understanding of Client/Server architecture.
+First, we'll discuss what happens to the data when we submit a form. To understand that, we need to have an understanding of Client-Server architecture.
 
 ## Client/Server architecture
 
-The Web uses a Client/Server architecture that can be summarized as follows:
+The Web uses a Client-Server architecture that can be summarized as follows:
 
 1. Client (a web browser) sends a request,
 2. To a Server (a web server like Apache, Tomcat, etc.),
@@ -33,7 +33,7 @@ The `action` attribute defines where we would like to send the data. Its value m
 
 ```
 
-The names and values of the form controls are sent to the server as `name=value` pairs joined with the `&` symbol.
+The names and values of the form controls are sent to the server as `name-value` pairs joined with the `&` symbol.
 
 ### `method` attribute
 
@@ -48,7 +48,7 @@ HTTP requests, such as the ones we send through HTML forms, consist of two parts
 
 #### `GET` method
 
-The `GET` method is used by the browser to ask the server to send back a given resource. In this case, the browser sends an empty body. Because the body is empty if a form is sent using this method, the data sent to the server is added to the URL.
+`GET` method is used by the browser to ask the server to send back a given resource. In this case, the browser sends an empty body. Because the body is empty if a form is sent using this method, the data sent to the server is added to the URL.
 
 ```js
 
@@ -64,11 +64,11 @@ The `GET` method is used by the browser to ask the server to send back a given r
 
 Since the `GET` method has been used, you'll see the URL `https://www.google.com/?name=John+Doe&email=john.doe%40email.com` appear in the browser address bar when you submit the form.
 
-The data is appended to the URL as a series of name/value pairs.
+The data is appended to the URL as a series of name-value pairs.
 
 #### `POST` method
 
-The `POST` method is a little different. It's the method the browser uses to talk to the server when asking for a response based on the body of the HTTP request.
+`POST` method is a little different. It's the method the browser uses to talk to the server when asking for a response based on the body of the HTTP request.
 
 If a form is sent using this method, the data is appended to the body of the HTTP request.
 
