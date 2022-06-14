@@ -4,7 +4,7 @@ In this lesson, we will learn about what happens when a user submits a form. We 
 
 First, we'll discuss what happens to the data when we submit a form. To understand that, we need to have an understanding of Client-Server architecture.
 
-## Client/Server architecture
+## Client-Server architecture
 
 The Web uses a Client-Server architecture that can be summarized as follows:
 
