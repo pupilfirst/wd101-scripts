@@ -1,8 +1,8 @@
 # Text
 
-Web Storage provides mechanisms to store key-value pairs in a much more intuitive way than using cookies. Traditionally cookies are used to save data in the client side. But cookies has a storage limit of 4KB. Cookies also get sent with every request to the server. With HTML5, web storage was introduced. The data stored using web storage APIs are never sent to the server.
+Web Storage provides mechanisms to store key-value pairs in a much more intuitive way than using cookies. Traditionally cookies are used to save data in the client side. But cookies has a storage limit of 4KB. Cookies also get sent with every request to the server. With HTML5, web storage was introduced. The data stored using Web Storage APIs are never sent to the server. APIs or Application Programming Interface is a software intermediary that allows two applications to talk to each other.
 
-There are two different APIs available:
+There are two different Web Storage APIs available:
 
 - sessionStorage
 
