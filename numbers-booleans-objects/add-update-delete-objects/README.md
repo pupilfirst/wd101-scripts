@@ -53,7 +53,7 @@ const kohli = {
   email: "virat@gmail.com"
 };
 
-delete user.age;
+delete kohli.age;
 ```
 This `delete` keyword deletes both the value of the property and the property itself. And, after deletion, if you would try to access the property, it would return `undefined`.
 
