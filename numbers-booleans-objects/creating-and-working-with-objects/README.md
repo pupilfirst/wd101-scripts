@@ -15,7 +15,7 @@ objectName.propertyName
 
 Like all JavaScript variables, both the object name and property name are case-sensitive. You can define a property by assigning it a value. 
 
-For example, let's create an object named `myComputer` and give it properties like `name`, `processor`, `ram` and `price` etc.
+For example, let's create an object named `user` and give it properties like `name`, `age`, `address` etc.
 
 #### Creating Objects
 Now, there are two different ways to create a JavaScript object.
@@ -24,29 +24,27 @@ Now, there are two different ways to create a JavaScript object.
 
 1. **Using object initializer**
 ```js
-const myComputer = {
+const user = {
   property_1: 'value_1',
-  name: 'Macbook Air',
-  processor: 'Intel i5',
-  ram: '8GB',
-  price: 65000
+  name: 'Rahul Dravid',
+  age: 50,
+  address: 'Bengaluru'
 }
 ```
-Here **myComputer** is the name of the new object, with properties like: `name`, `processor`, `ram` etc.
+Here **user** is the name of the new object, with properties like: `name`, `age`, `address` etc.
 
-One important point to note here, assigning an **object** to a variable (Ex. here it's assigned to **myComputer**) is totally optional. You can define this object without giving it a name.
+One important point to note here, assigning an **object** to a variable (Ex. here it's assigned to **user**) is totally optional. You can define this object without giving it a name.
 
 A property of an object can contain another object too, for example:
 ```js
-const myComputer = {
-  name: 'Macbook Air',
-  processor: 'Intel i5',
-  ram: '8GB',
-  price: 65000,
-  storage: {
-    type: "SSD",
-    size: "512 GB",
-    brand: "WD"
+const rahul = {
+  name: 'Rahul Dravid',
+  age: 50,
+  address: 'Bengaluru'
+  education: {
+    degree: "B Tech",
+    course: "Information Technology"
+    college: "IITM"
   }
 }
 ```
@@ -60,25 +58,25 @@ Alternatively, you can create an object with these two steps:
 
 To define an **object type**, create a function that specifies its name, properties, and methods. 
 
-For example, suppose you want to create an **object type** for *cars* with properties like: make, model, and year. To do this, you would write the following function:
+For example, suppose you want to create an **object type** for *user*. To do this, you would write the following function:
 
 ```js
-function Car(make, model, year) {
-  this.make = make;
-  this.model = model;
-  this.year = year;
+function User(name, age, address) {
+  this.name = name;
+  this.age = age;
+  this.address = address;
 }
 ```
-Here, `this` is used to assign values to the object's properties. Now you can create an object called myCar as follows:
+Here, `this` is used to assign values to the object's properties. Now you can create an object of `User` as follows:
 ```js
-  const myCar = new Car('Honda', 'Civic', 2018);
+  const sachin = new User('Sachin', 50, 'Mumbai');
 
   // Try it out
-  console.log(myCar)
+  console.log(sachin)
 
-  // You can create any number of **Car** objects by calls to `new`. For example,
-  const magnite = new Car('Nissan', 'Magnite', 2021);
-  const seltos = new Car('Kia', 'Seltos', 2020);
+  // You can create any number of **User** objects by calls to `new`. For example,
+  const kohli = new User('Virat Kohli', 32, 'Delhi');
+  const rohit = new User('Rohit Sharma', 33, 'Mumbai');
 ```
 
 ### To conclude
