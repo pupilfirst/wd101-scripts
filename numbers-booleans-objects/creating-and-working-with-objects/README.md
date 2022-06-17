@@ -26,9 +26,9 @@ Now, there are two different ways to create a JavaScript object.
 ```js
 const user = {
   property_1: 'value_1',
-  name: 'Avishek Jana',
-  age: 20,
-  address: 'Kolkata'
+  name: 'Rahul Dravid',
+  age: 50,
+  address: 'Bengaluru'
 }
 ```
 Here **user** is the name of the new object, with properties like: `name`, `age`, `address` etc.
@@ -37,14 +37,14 @@ One important point to note here, assigning an **object** to a variable (Ex. her
 
 A property of an object can contain another object too, for example:
 ```js
-const avishek = {
-  name: 'Avishek Jana',
-  age: 20,
-  address: 'Kolkata'
+const rahul = {
+  name: 'Rahul Dravid',
+  age: 50,
+  address: 'Bengaluru'
   education: {
     degree: "B Tech",
     course: "Information Technology"
-    college: "CU"
+    college: "IITM"
   }
 }
 ```
@@ -67,7 +67,7 @@ function User(name, age, address) {
   this.address = address;
 }
 ```
-Here, `this` is used to assign values to the object's properties. Now you can create an object called myCar as follows:
+Here, `this` is used to assign values to the object's properties. Now you can create an object of `User` as follows:
 ```js
   const sachin = new User('Sachin', 50, 'Mumbai');
 
