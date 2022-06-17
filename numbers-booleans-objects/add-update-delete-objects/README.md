@@ -29,7 +29,7 @@ user['date-of-birth'] = "10-04-1990";
 ### Updating Property value
 To update a peopertie's value, simply assign it a new value. For example:
 ```js
-const user = {
+const virat = {
   firstName: "Virat",
   lastName: "Kohli",
   age: 32,
