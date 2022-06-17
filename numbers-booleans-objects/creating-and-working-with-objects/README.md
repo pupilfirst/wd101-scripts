@@ -72,7 +72,7 @@ Here, `this` is used to assign values to the object's properties. Now you can cr
   const sachin = new User('Sachin', 50, 'Mumbai');
 
   // Try it out
-  console.log(user1)
+  console.log(sachin)
 
   // You can create any number of **User** objects by calls to `new`. For example,
   const kohli = new User('Virat Kohli', 32, 'Delhi');
