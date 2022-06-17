@@ -38,7 +38,7 @@ const virat = {
 
 user.age = 33
 
-console.log(user.age)
+console.log(virat.age)
 ```
 
 
