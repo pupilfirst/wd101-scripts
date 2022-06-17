@@ -46,7 +46,7 @@ console.log(virat.age)
 The `delete` keyword deletes a property from an object, like:
 
 ```js
-const user = {
+const kohli = {
   firstName: "Virat",
   lastName: "Kohli",
   age: 32,
