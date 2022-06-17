@@ -36,7 +36,7 @@ const virat = {
   email: "virat@gmail.com"
 };
 
-user.age = 33
+virat.age = 33
 
 console.log(virat.age)
 ```
