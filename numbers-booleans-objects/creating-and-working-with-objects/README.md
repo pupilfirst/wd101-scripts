@@ -43,7 +43,7 @@ const user = {
   address: 'Kolkata'
   education: {
     degree: "B Tech",
-    cource: "Information Technology"
+    course: "Information Technology"
     college: "CU"
   }
 }
