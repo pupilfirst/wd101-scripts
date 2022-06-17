@@ -69,7 +69,7 @@ function User(name, age, address) {
 ```
 Here, `this` is used to assign values to the object's properties. Now you can create an object called myCar as follows:
 ```js
-  const user1 = new User('Sachin', 50, 'Mumbai');
+  const sachin = new User('Sachin', 50, 'Mumbai');
 
   // Try it out
   console.log(user1)
