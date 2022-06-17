@@ -37,7 +37,7 @@ One important point to note here, assigning an **object** to a variable (Ex. her
 
 A property of an object can contain another object too, for example:
 ```js
-const user = {
+const avishek = {
   name: 'Avishek Jana',
   age: 20,
   address: 'Kolkata'
