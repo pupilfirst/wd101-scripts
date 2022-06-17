@@ -23,7 +23,7 @@ user['email'] = "virat@gmail.com";
 It does the same thing as the previous example, but we can have invalid property identifiers with hyphen or space with this notation.
 
 ```js
-user['date-of-borth'] = "10-04-1990";
+user['date-of-birth'] = "10-04-1990";
 ```
 
 ### Updating Property value
