@@ -39,7 +39,7 @@ In JavaScript objects, property name can be any string, or anything that can be 
   // Adding such properties which are not a valid JS identifier
   user['date of birth'] = '19 July 1970';
   user['favourite-color'] = 'Red';
-  user[''] = 'Cricketer'; // yes, even a empty string can be a property name
+  user[''] = 'Cricketer'; // yes, even an empty string can be a property name
   user[1234] = 'India';
 
   // All of these properties can only be accessed via dot notation. Try it out.
