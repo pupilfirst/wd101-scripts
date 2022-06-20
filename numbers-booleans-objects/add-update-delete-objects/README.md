@@ -27,7 +27,7 @@ user['date-of-birth'] = "10-04-1990";
 ```
 
 ### Updating Property value
-To update a peopertie's value, simply assign it a new value. For example:
+To update a property's value, simply assign it a new value. For example:
 ```js
 const virat = {
   firstName: "Virat",
