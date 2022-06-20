@@ -75,7 +75,7 @@ This work is licensed under a
 2. [First Steps with Forms and Form Elements](./building-web-forms/form-and-form-elements)
 3. [Submitting user data from Forms](./building-web-forms/submitting-user-data)
 4. [Creating your First Form](./building-web-forms/creating-your-first-form)
-5. [Creating Validations]()
+5. [Creating Validations](./building-web-forms/creating-form-validations)
 6. [Learn more about Forms](./building-web-forms/learn-more-forms)
 7. [Introduction to Web Storage](./building-web-forms/web-storage)
 8. [Submit and View Inputs from Web Storage](./building-web-forms/load-from-web-storage)
