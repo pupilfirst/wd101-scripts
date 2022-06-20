@@ -1,12 +1,12 @@
 # Text
-We already know that, the **properties** are the most important part of any JavaScript object. They are the values associated with an object.
+We already know that **properties** are the most important part of any JavaScript object. They are the values associated with an object.
 
 Here, we will learn to add, update and delete properties of an Javascript Object.
 
 ### Adding New Properties
 There’re a few ways to add properties to an object in JavaScript. You can add new properties to an existing object by simply giving it a value.
 
-Assume that you've an *user* object that already exists. One way to add a property to this  *user* object is, by using the **dot notation**:
+Assume that you've a *user* object that already exists. One way to add a property to this  *user* object is, by using the **dot notation**:
 
 ```js
   user.email = "virat@gmail.com";
