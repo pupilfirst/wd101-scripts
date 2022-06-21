@@ -38,7 +38,7 @@ The element matches the `:valid` CSS pseudo-class, which lets you apply a specif
 
 If the user tries to send the data, the browser will submit the form, provided there is nothing else stopping it from doing so (e.g., JavaScript).
 
-When an element is `invalid`, the following things are true:
+When an element is `invalid`, the following are true:
 
 The element matches the `:invalid` CSS pseudo-class, and sometimes other UI pseudo-classes (e.g., :out-of-range) depending on the error, which lets you apply a specific style to invalid elements.
 
