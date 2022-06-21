@@ -1,6 +1,6 @@
 # Script
 
-In this video we will learn about HTML Forms and using Form controls within it to collect user input on web pages.
+In this lesson, we will learn about HTML Forms and using Form controls within them to collect user input on web pages.
 
 The HTML `form` element helps to create an HTML form for user input. It is used as a container for elements such as text fields, checkboxes, radio buttons and submit buttons.
 
@@ -12,7 +12,7 @@ Let's create a `form` that can collect user data. This element wraps all the oth
 <form>## form elements</form>
 ```
 
-You cannot have forms nested inside another form. That means, you cannot have a `form` element inside another `form` element.
+You cannot have forms nested inside another form. That means you cannot have a `form` element inside another `form` element.
 
 Now let's add a few form-related elements to the above `form`.
 
@@ -24,7 +24,7 @@ The `input` element with the type `text` is used to get Text-based user data fro
 
 ```js
 <form>
-    <input type="text" id="name" name="name">
+   <input type="text" id="name" name="name">
 </form>
 ```
 
@@ -40,8 +40,8 @@ The `label` element defines a label for many form elements. It is used to provid
 
 ```js
 <form>
-    <input type="text" id="name" name="name">
-    <label for="name">User Name:</label>
+   <input type="text" id="name" name="name">
+   <label for="name">User Name:</label>
 </form>
 ```
 
@@ -53,14 +53,30 @@ The `input` element with the type `checkbox` allows a user to select 0 or more o
 
 > Action: Open the HTML Document created previously and add a checkbox to the Form element as below.
 
+```js
+<input type="checkbox" id="checkbox" name="checkbox">
+<label for="checkbox">Yes</label>
+```
+
 ### Radio button
 
 The `input` element with the type `radio` allows a user to select a single option from a limited number of choices.
 
 > Action: Open the HTML Document created previously and add a radio button to the Form element as below.
 
+```js
+<input type="radio" id="radio" name="radio" value="true">
+<label for="radio">True</label>
+```
+
 ### Submit button
 
 The `input` element with the type `submit` allows a user to send the collected form data to a web server.
 
 > Action: Open the HTML Document created previously and add a submit button to the Form element as below.
+
+```js
+<button type="submit">Submit</button>
+```
+
+The above-mentioned controls are some basic form-related controls used across most web forms. Next, we will learn about using these controls to create a full-fledged web form to be used on our web page.
