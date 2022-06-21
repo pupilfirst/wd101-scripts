@@ -8,7 +8,7 @@ Validation done in the browser is called client-side validation, while validatio
 
 In this lesson, we will focus on client-side validation.
 
-If the data provided is correctly formatted, the application allows the data to be submitted. But, if the data is not in the right format, we give the user an error message explaining what needs to be corrected and lets them try again.
+If the data entered is correctly formatted, the application allows the data to be submitted. But, if the data is not in the proper format, we give the user an error message explaining what needs to be corrected and let them try again.
 
 ## Types of Form validation
 
