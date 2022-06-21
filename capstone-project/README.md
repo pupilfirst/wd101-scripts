@@ -16,9 +16,11 @@ Once you've hosted it online, share its link with us.
 
 2. ...include a separate _Project_ page that includes the survey form that you've built in this level. This means a fully functional survey form including loading of saved data from web storage that we built in this level.
 
-3. ...include a separate page to display the saved survey data.
+3. ...add additional validations to the date input field, so that it accepts date of birth for people  between ages 18 and 55 only.
 
-4. Host your website on Github pages, and share the link to a hosted version of your website.
+4. ...include a separate page to display the saved survey data.
+
+5. Host your website on Github pages, and share the link to a hosted version of your website.
 
 ## Please ensure that...
 
