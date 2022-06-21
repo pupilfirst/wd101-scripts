@@ -32,7 +32,7 @@ Some commonly used validation attributes are listed below:
 
 If the data entered in a form field follows all the rules specified by the above attributes, it is considered valid. If not, it is considered invalid.
 
-When an element is `valid`, the following things are true:
+When an element is `valid`, the following are true:
 
 The element matches the `:valid` CSS pseudo-class, which lets you apply a specific style to valid elements.
 
