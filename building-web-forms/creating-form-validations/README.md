@@ -2,7 +2,7 @@
 
 In this lesson, we will add validations to the form we created.
 
-Before submitting data, it is important to ensure all required form controls are filled in the correct format. This is called form validation. This helps us to make sure the data submitted matches the requirements set for these form controls.
+Before submitting data, it is crucial to ensure all required form controls are correctly filled. This is called form validation. Validation helps us ensure that the submitted data matches the requirements set for these form controls.
 
 Validation done in the browser is called client-side validation, while validation done on the web server is called server-side validation.
 
