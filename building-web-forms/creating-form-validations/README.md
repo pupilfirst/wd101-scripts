@@ -15,7 +15,7 @@ If the data entered is correctly formatted, the application allows the data to b
 There are two different types of client-side validation:
 
 1. Built-in form validation, that uses HTML form validation features.
-2. JavaScript validation, which is coded using JavaScript.
+2. JavaScript validation, which is written using JavaScript.
 
 Built-in form validation has better performance than JavaScript, but it is not as customizable as JavaScript validation.
 
