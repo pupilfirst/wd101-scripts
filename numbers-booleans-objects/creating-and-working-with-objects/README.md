@@ -33,7 +33,19 @@ const user = {
 ```
 Here **user** is the name of the new object, with properties like: `name`, `age`, `address` etc.
 
-One important point to note here, assigning an **object** to a variable (Ex. here it's assigned to **user**) is totally optional. You can define this object without giving it a name.
+One important point to note here, assigning an **object** to a variable (Ex. here it's assigned to **user**) is totally optional. If you feel that a reference to the new object will be required in future, then only assign it to a variable. 
+
+You can use this **variable** name to print the object details in browser console, like:
+```js
+console.log(user)
+```
+Along with that, you can also add, remove and update properties of this object using this reference available (will explain in details in future lessons). 
+
+Or else, you can define this object without giving it a name, by just using the curly braces `{}`.
+
+```js
+console.log({ name: 'Rahul Dravid', age: 50 })
+```
 
 A property of an object can contain another object too, for example:
 ```js
@@ -49,7 +61,7 @@ const rahul = {
 }
 ```
 
-2. **Using a constructor function**
+1. **Using a constructor function**
 
 Alternatively, you can create an object with these two steps:
 
