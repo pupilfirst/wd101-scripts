@@ -21,52 +21,65 @@ This work is licensed under a
 
 ## L1. Welcome to the course!
 
-1. [How to get help](./introduction/how-to-get-help)
-1. [Install Visual Studio Code](./introduction/installing-vscode)
-2. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
-3. [Install Ubuntu in Windows, using WSL](./introduction/installing-ubuntu-linux-using-wsl)
-4. [Install Ubuntu in Windows, using Virtualbox](./introduction/installing-ubuntu-linux-using-virtualbox)
+1. [Web Browsers](./introduction/web-browsers)
+2. [How to get help](./introduction/how-to-get-help)
+3. [Install Visual Studio Code](./introduction/installing-vscode)
+4. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
+5. [Install ESLint Plugin in VSCode](./introduction/setting-up-eslint)
+6. [Install Ubuntu in Windows, using WSL](./introduction/installing-ubuntu-linux-using-wsl)
+7. [Install Ubuntu in Windows, using Virtualbox](./introduction/installing-ubuntu-linux-using-virtualbox)
 
-## L3. Style Matters
+## L2. Let's create our own websites!
 
-1. [Styling HTML using CSS files](./style-matters/styling-html-using-css-files)
-2. [Introduction to Tailwind CSS](./style-matters/introduction-to-tailwind-css)
-3. [Working with Tailwind](./style-matters/working-with-tailwind)
-4. [Tailwind's relationship with JavaScript](./style-matters/tailwinds-relationship-with-javascript)
+>TODO: add lessons
 
-## L4. Working with Strings
+## L3. Basic Introduction to HTML and CSS
 
-### First steps with Javascript
+1. [HTML and Semantics](./basic-introduction-html-css/html-semantics)
+2. [Introduction to HTML Elements](./basic-introduction-html-css/html-elements)
+3. [Linking pages](./basic-introduction-html-css/linking-pages-and-elements)
+4. [Introduction to Form element](./basic-introduction-html-css/introduction-to-form-element)
+5. [Learn more about HTML](./basic-introduction-html-css/learn-more-about-html)
+6. [CSS and styling structure](./basic-introduction-html-css/css-and-styling-structure)
+7. [CSS classes and selectors](./basic-introduction-html-css/css-classes-and-selectors)
+8. [CSS styling overrides](./basic-introduction-html-css/css-styling-overrides)
+9. [Styling HTML using CSS files](./style-matters/styling-html-using-css-files)
+10. [Putting HTML, CSS, and JS together](./basic-introduction-html-css/putting-together-html-css-js)
+11. [Adding comments to HTML, CSS, and JS](./basic-introduction-html-css/html-css-js-comments)
 
-1. [What is JavaScript](./working-with-strings/what-is-javascript)
 
-### Switching to the VSCode Editor
+## L4. Style Matters
 
-1. [Putting HTML and JS together](./working-with-strings/putting-html-and-js-together)
-2. [Adding comments to HTML and JS](./working-with-strings/adding-comments-to-html-and-js)
+1. [Introduction to CSS Frameworks](./style-matters/introduction-to-css-frameworks)
+2. [Using CSS Frameworks for styling](./style-matters/using-css-framework-for-styling)
+3. [Introduction to Tailwind CSS](./style-matters/introduction-to-tailwind-css)
+4. [Working with Tailwind](./style-matters/working-with-tailwind)
+5. [Tailwind's relationship with JavaScript](./style-matters/tailwinds-relationship-with-javascript)
 
-## L5. Numbers, Booleans, Objects & Arrays
+## L5. Working with JavaScript data types
 
-1. [Task: Create a function to validate passphrase](./numbers-booleans-objects/create-a-function-to-validate-passphrase)
+>TODO: Add lessons
+## L6. Basics of JavaScript data structures
 
-## L6. Functions
+1. [Creating and working with objects](./numbers-booleans-objects/creating-and-working-with-objects)
+2. [Add / update/ delete object properties](./numbers-booleans-objects/add-update-delete-objects)
+3. [Accessing data in objects](./numbers-booleans-objects/accessing-data-in-js-objects)
+4. [Manipulating objects](./numbers-booleans-objects/manipulating-objects)
 
-1. [Need additional help?](./functions/need-additional-help)
+## L7. Functions
 
-## L7. Collections
+>TODO: Add lessons
+## L8. Create a survey form with Validations
 
-1. [A minimal UI for filtering flight search results](./collections/a-minimal-ui-for-filtering-flight-search-results)
+1. [Why should you learn about the HTML Form element and Form data](./building-web-forms/why-html-forms)
+2. [First Steps with Forms and Form Elements](./building-web-forms/form-and-form-elements)
+3. [Submitting user data from Forms](./building-web-forms/submitting-user-data)
+4. [Creating your First Form](./building-web-forms/creating-your-first-form)
+5. [Creating Validations](./building-web-forms/creating-form-validations)
+6. [Learn more about Forms](./building-web-forms/learn-more-forms)
+7. [Introduction to Web Storage](./building-web-forms/web-storage)
+8. [Submit and View Inputs from Web Storage](./building-web-forms/load-from-web-storage)
 
-## L8. Building a game with canvas
+## Capstone Project
 
-1. [Introduction](./building-a-game-with-canvas/intro)
-2. [Install Node.js](./building-a-game-with-canvas/install-node-js)
-3. [First Steps with Canvas](./building-a-game-with-canvas/first-steps-with-canvas)
-4. [Dynamic Drawings](./building-a-game-with-canvas/dynamic-drawings)
-5. [Martial Arts Sim - Intro](./building-a-game-with-canvas/martial-arts-sim-intro)
-6. [Loading External Images](./building-a-game-with-canvas/loading-external-images)
-7. [Absolute & relative file paths](./building-a-game-with-canvas/absolute-and-relative-file-paths)
-7. [Using Callbacks](./building-a-game-with-canvas/using-callbacks)
-8. [Animating with Images](./building-a-game-with-canvas/animating-with-images)
-9. [Loading Multiple Animations](./building-a-game-with-canvas/loading-multiple-animations)
-10. [Taking Control](./building-a-game-with-canvas/taking-control)
+1. [Personal website with survey form deployed as Github page](./capstone-project)

@@ -1,5 +1,5 @@
 # Text
-We already know that, the **properties** are the most important part of any JavaScript object. They are the values associated with an object.
+We already know that **properties** are the most important part of any JavaScript object. They are the values associated with an object.
 
 Here, we will learn to add, update and delete properties of an Javascript Object.
 
@@ -38,7 +38,7 @@ console.log(virat.age)
 ```
 
 ### Updating Property value
-To update a peopertie's value, simply assign it a new value. For example:
+To update a property's value, simply assign it a new value. For example:
 ```js
 const virat = {
   firstName: "Virat",
