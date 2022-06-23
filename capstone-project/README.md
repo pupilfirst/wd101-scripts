@@ -18,9 +18,7 @@ Once you've hosted it online, share its link with us.
 
 3. ...add additional validations to the date input field, so that it accepts date of birth for people  between ages 18 and 55 only.
 
-4. ...include a separate page to display the saved survey data.
-
-5. Host your website on Github pages, and share the link to a hosted version of your website.
+4. Host your website on Github pages, and share the link to a hosted version of your website.
 
 ## Please ensure that...
 
