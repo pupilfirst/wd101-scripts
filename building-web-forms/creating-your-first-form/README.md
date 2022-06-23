@@ -10,7 +10,7 @@ In this lesson, we will create our first form using the HTML `form` element.
 
 ## Design
 
-![Demo Form](sample_user_form.png)
+![Demo Form](sample_user_form.jpg)
 
 ## Script
 
@@ -19,11 +19,7 @@ First, let us create a `form` element as a wrapper for all the controls we build
 > Action: Open an editor and create a form element as below
 
 ```js
-
-<form>
-    #form controls
-</form>
-
+<form>#form controls</form>
 ```
 
 Next, let us create the controls one by one. We will start with the Name input field. It is a text-only input field, so we will create an input element of the type set to text. We will also create a `label` for all the input elements as per the design.
@@ -70,42 +66,13 @@ Next, we will create the Date of birth input field. It is an input field which g
 
 ```
 
-Next, we will create a radio button group. This radio button control is used to select only one of the given values and is grouped by the `name` attribute.
+Next, we will create the 'Accept Terms & Conditions' checkbox. The input field of type `checkbox` is used to create one. Checkboxes are generally used to let a user select one or more options.
 
 ```js
 
 <form>
-   <p>Age group</p>
-   <input type="radio" id="agegroup1" name="agegroup" value="18plus">
-   <label for="agegroup1">18-35</label>
-
-   <input type="radio" id="agegroup2" name="agegroup" value="35plus">
-   <label for="agegroup2">36-55</label>
-</form>
-
-```
-
-Next, we will create a drop-down to select the course. The `select` element is used to create a drop-down list. The `name` attribute is used to refer to the data after the form is submitted. A single `select` element can have multiple `option` elements within it.
-
-```js
-
-<form>
-  <label for="course">Course</label>
-  <select name="course" id="course">
-    <option value="cs">Computer Science</option>
-    <option value="it">Information Technology</option>
-  </select>
-</form>
-
-```
-
-Next, we will create the 'Remember me' checkbox. The input field of type `checkbox` is used to create one. Checkboxes are generally used to let a user select one or more options.
-
-```js
-
-<form>
-   <input type="checkbox" id="remember_me" name="remember_me">
-   <label for="remember_me">Remember me</label>
+   <input type="checkbox" id="acceptTerms" name="acceptTerms">
+   <label for="acceptTerms">Accept Terms & Conditions</label>
 </form>
 
 ```
@@ -113,11 +80,9 @@ Next, we will create the 'Remember me' checkbox. The input field of type `checkb
 Finally, let's add a Submit button that lets the user send this data collected to a web server. We can create a button using the `button` element. The `type` attribute of the button is used to define the action associated with it. In our case, as we are creating a form to submit user data, we will use the type `submit`.
 
 ```js
-
 <form>
   <button type="submit">Submit</button>
 </form>
-
 ```
 
 The final HTML for the form we created will look something like the one below:
@@ -137,25 +102,14 @@ The final HTML for the form we created will look something like the one below:
    <label for="dob">Date of Birth</label>
    <input type="date" id="dob" name="dob">
 
-   <p>Age group</p>
-   <input type="radio" id="agegroup1" name="agegroup" value="18plus">
-   <label for="agegroup1">18-35</label>
-
-   <input type="radio" id="agegroup2" name="agegroup" value="35plus">
-   <label for="agegroup2">36-55</label>
-
-   <label for="course">Course</label>
-   <select name="course" id="course">
-       <option value="cs">Computer Science</option>
-       <option value="it">Information Technology</option>
-   </select>
-
-   <input type="checkbox" id="remember_me" name="remember_me">
-   <label for="remember_me">Remember me</label>
+   <input type="checkbox" id="acceptTerms" name="acceptTerms">
+   <label for="acceptTerms">Accept Terms & Conditions</label>
 
    <button type="submit">Submit</button>
 </form>
 
 ```
+
+There are multiple other form controls that HTML provides, and you can use them in your applications based on your requirements. You can refer to the details of the same [here](https://www.w3schools.com/html/html_form_elements.asp).
 
 In the upcoming lessons, we will learn about validating the input entered by the user and how user data is submitted to a web server.
