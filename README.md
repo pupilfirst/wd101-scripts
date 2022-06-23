@@ -38,14 +38,13 @@ This work is licensed under a
 1. [HTML and Semantics](./basic-introduction-html-css/html-semantics)
 2. [Introduction to HTML Elements](./basic-introduction-html-css/html-elements)
 3. [Linking pages](./basic-introduction-html-css/linking-pages-and-elements)
-4. [Introduction to Form element](./basic-introduction-html-css/introduction-to-form-element)
-5. [Learn more about HTML](./basic-introduction-html-css/learn-more-about-html)
-6. [CSS and styling structure](./basic-introduction-html-css/css-and-styling-structure)
-7. [CSS classes and selectors](./basic-introduction-html-css/css-classes-and-selectors)
-8. [CSS styling overrides](./basic-introduction-html-css/css-styling-overrides)
-9. [Styling HTML using CSS files](./style-matters/styling-html-using-css-files)
-10. [Putting HTML, CSS, and JS together](./basic-introduction-html-css/putting-together-html-css-js)
-11. [Adding comments to HTML, CSS, and JS](./basic-introduction-html-css/html-css-js-comments)
+4. [Learn more about HTML](./basic-introduction-html-css/learn-more-about-html)
+5. [CSS and styling structure](./basic-introduction-html-css/css-and-styling-structure)
+6. [CSS classes and selectors](./basic-introduction-html-css/css-classes-and-selectors)
+7. [CSS styling overrides](./basic-introduction-html-css/css-styling-overrides)
+8. [Styling HTML using CSS files](./style-matters/styling-html-using-css-files)
+9.  [Putting HTML, CSS, and JS together](./basic-introduction-html-css/putting-together-html-css-js)
+10. [Adding comments to HTML, CSS, and JS](./basic-introduction-html-css/html-css-js-comments)
 
 
 ## L4. Style Matters
