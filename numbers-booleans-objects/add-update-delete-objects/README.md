@@ -9,8 +9,7 @@ There’re a few ways to add properties to an object in JavaScript. You can add 
 Assume that you've an *user* object  with the following definition:
 ```js
 const user = {
-  firstName: "Virat",
-  lastName: "Kohli",
+  name: "Virat",
   age: 32
 };
 ```
@@ -34,15 +33,14 @@ It does the same thing as the previous example, but we can have invalid property
 ```js
 user['date-of-birth'] = "10-04-1990";
 
-console.log(virat.age)
+console.log(user.age)
 ```
 
 ### Updating Property value
 To update a property's value, simply assign it a new value. For example:
 ```js
 const virat = {
-  firstName: "Virat",
-  lastName: "Kohli",
+  name: "Virat",
   age: 32,
   email: "virat@gmail.com"
 };
@@ -58,8 +56,7 @@ The `delete` keyword deletes a property from an object, like:
 
 ```js
 const kohli = {
-  firstName: "Virat",
-  lastName: "Kohli",
+  name: "Virat Kohli",
   age: 32,
   email: "virat@gmail.com"
 };
