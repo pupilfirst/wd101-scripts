@@ -61,7 +61,7 @@ const rahul = {
 }
 ```
 
-1. **Using a constructor function**
+2. **Using a constructor function**
 
 Alternatively, you can create an object with these two steps:
 
