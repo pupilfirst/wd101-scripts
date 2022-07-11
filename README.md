@@ -67,7 +67,7 @@ Unchanged from v1. Content is on Pupilfirst LMS.
 
 ## L7. Functions
 
->TODO: Add lessons
+Unchanged from v1. Content is on Pupilfirst LMS.
 ## L8. Create a survey form with Validations
 
 1. [Why should you learn about the HTML Form element and Form data](./building-web-forms/why-html-forms)
