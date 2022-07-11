@@ -31,7 +31,7 @@ This work is licensed under a
 
 ## L2. Let's create our own websites!
 
->TODO: add lessons
+Unchanged from v1. Content is on Pupilfirst LMS.
 
 ## L3. Basic Introduction to HTML and CSS
 
@@ -57,7 +57,7 @@ This work is licensed under a
 
 ## L5. Working with JavaScript data types
 
->TODO: Add lessons
+Unchanged from v1. Content is on Pupilfirst LMS.
 ## L6. Basics of JavaScript data structures
 
 1. [Creating and working with objects](./numbers-booleans-objects/creating-and-working-with-objects)
