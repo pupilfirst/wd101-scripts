@@ -52,10 +52,10 @@ A property of an object can contain another object too, for example:
 const rahul = {
   name: 'Rahul Dravid',
   age: 50,
-  address: 'Bengaluru'
+  address: 'Bengaluru',
   education: {
     degree: "B Tech",
-    course: "Information Technology"
+    course: "Information Technology",
     college: "IITM"
   }
 }
