@@ -42,6 +42,6 @@ In JavaScript objects, property name can be any string, or anything that can be 
   user[''] = 'Cricketer'; // yes, even an empty string can be a property name
   user[1234] = 'India';
 
-  // All of these properties can only be accessed via dot notation. Try it out.
+  // All of these properties can only be accessed via bracket notation. Try it out.
   console.log(user)
 ```
