@@ -19,7 +19,6 @@ Now let's actually add the functionality to save the data. We will also display 
 let userEntries = [];
 const saveUserForm = (event) => {
   event.preventDefault();
-  event.preventDefault();
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
