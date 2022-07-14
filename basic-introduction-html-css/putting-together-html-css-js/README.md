@@ -1,4 +1,4 @@
-#Script
+# Script
 
 In this video, we will learn how to put together a web page that contains HTML, CSS, and JavaScript.
 
@@ -87,7 +87,7 @@ Save the HTML file. Switch back to the browser and reload our page. We can see t
 
 We have now glued together HTML, CSS, and JavaScript.
 
-#Text
+# Text
 
 HTML doesn't have any presentation information. We do that by using CSS. We can add CSS to HTML elements in the following ways:
 
