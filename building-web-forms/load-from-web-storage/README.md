@@ -8,7 +8,22 @@ We will now add a `save` button to save and persist these data to the LocalStora
 > Action: Add a button with type submit to the user form.
 
 ```html
-<input type="submit" value="Add" />
+<button type="submit">Add</button>
+```
+
+Let's also add an `id` to the form to later reference it from JavaScript.
+
+```html
+<form id="user-form">
+  <label
+    for="name"
+    class="text-md w-40 inline-block font-medium leading-5 text-gray-700"
+  >
+    Name
+  </label>
+
+  <!-- .... -->
+</form>
 ```
 
 Now let's actually add the functionality to save the data. We will also display the details in a table once user submits the form.
@@ -36,7 +51,7 @@ const saveUserForm = (event) => {
   localStorage.setItem("user-entries", JSON.stringify(userEntries));
 };
 
-let form = document.getElementById("user_form");
+let form = document.getElementById("user-form");
 form.addEventListener("submit", saveUserForm, true);
 ```
 
@@ -117,7 +132,7 @@ const saveUserForm = (event) => {
   displayEntries(); // Add this line
 };
 
-let form = document.getElementById("user_form");
+let form = document.getElementById("user-form");
 form.addEventListener("submit", saveUserForm, true);
 displayEntries();
 ```
