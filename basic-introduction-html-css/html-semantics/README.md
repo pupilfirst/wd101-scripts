@@ -50,7 +50,7 @@ Here you can see that we have elements like `<nav>` which should be used to prov
 </section>
 ```
 
-Another element we can use to represent a self-contained text is `<article>`. We can create and `<article>` with one or more `<section>` within it.
+Another element we can use to represent a self-contained text is `<article>`. We can create an `<article>` with one or more `<section>` within it.
 
 > Action: write the following example.
 
