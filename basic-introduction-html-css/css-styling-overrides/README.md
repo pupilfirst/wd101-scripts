@@ -25,7 +25,7 @@ Here, **Browser Defaults** have the lowest priority, then comes the **External S
 It also means that, when a conflict arises between two styles, this order will come to effect.
 
 To make it clearer:
-- You must place **inline styles** in the `<body>` of the HTML document, and **internal stylesheets** must be placed in the <head> of the HTML document. So that, the inline styles will always be the last used ones and therefore they will take precedence.
+- You must place **inline styles** in the `<body>` of the HTML document, and **internal stylesheets** must be placed in the `<head>` of the HTML document. So that, the inline styles will always be the last used ones and therefore they will take precedence.
 
 ### Inheritance
 
