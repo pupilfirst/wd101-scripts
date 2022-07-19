@@ -59,6 +59,7 @@ Unchanged from v1. Content is on Pupilfirst LMS.
 
 Unchanged from v1. Content is on Pupilfirst LMS.
 ## L6. Basics of JavaScript data structures
+The lessons on `Arrays` are unchanged from v1 content and are available on Pupilfirst LMS. 
 
 1. [Creating and working with objects](./numbers-booleans-objects/creating-and-working-with-objects)
 2. [Add / update/ delete object properties](./numbers-booleans-objects/add-update-delete-objects)
