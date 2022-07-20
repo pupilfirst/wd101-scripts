@@ -36,6 +36,7 @@ Bootstrap website Link: http://getbootstrap.com/
 3. Even though Tailwind doesn’t include any pre-designed components, it allows you to create your own custom components that you can reuse throughout your projects. 
 
 Tailwind website Link: https://tailwindcss.com/
+
 **To conclude**
 
 There are a lot other CSS frameworks available in the market today such as: Foundation, Bulma, Miligram, Materialize etc. Some of them offer pre-made components, some only provide utility classes and don’t offer styling. In one way or another, they all help us to boost our productivity.
