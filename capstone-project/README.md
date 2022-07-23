@@ -6,7 +6,7 @@ It's very common for developers to have their own personal website. One that is 
 
 If you haven't built one yet, consider this your time to make one.
 
-**To complete this course**: Create and host a website of your own, host it using *Github Pages*, and include the survey form that you've built in this level as one of your _project_.
+**To complete this course**: Create and host a website of your own, host it using *Github Pages*, and include the registration form that you've built in this level as one of your _project_.
 
 Once you've hosted it online, share its link with us.
 
@@ -14,7 +14,7 @@ Once you've hosted it online, share its link with us.
 
 1. Using what you've learned, create a personal website of your own. You can put anything you want inside of it, as long as you...
 
-2. ...include a separate _Project_ page that includes the survey form that you've built in this level. This means a fully functional survey form including loading of saved data from web storage that we built in this level.
+2. ...include a separate _Project_ page that includes the registration form that you've built in this level. This means a fully functional registration form including loading of saved data from web storage that we built in this level.
 
 3. ...add additional validations to the date input field, so that it accepts date of birth for people  between ages 18 and 55 only.
 
@@ -23,8 +23,8 @@ Once you've hosted it online, share its link with us.
 ## Please ensure that...
 
 1. ...your website is live, and accessible.
-2. ...your website includes a link to a separate _Project_ (or similar) page that includes the survey form. Do **not** put your survey form on the _index_ page; put it on a separate page, and then link to it.
-3. ...the survey form on your website should be functional.
+2. ...your website includes a link to a separate _Project_ (or similar) page that includes the registration form. Do **not** put your registration form on the _index_ page; put it on a separate page, and then link to it.
+3. ...the registration form on your website should be functional.
 
 We'll take a look at your site, and tell you what we think of it - no bot (automated) reviews here - just other developers looking at your work and sharing some comments.
 
