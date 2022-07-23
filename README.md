@@ -82,4 +82,4 @@ Unchanged from v1. Content is on Pupilfirst LMS.
 
 ## Capstone Project
 
-1. [Personal website with survey form deployed as Github page](./capstone-project)
+1. [Personal website with registration form deployed as Github page](./capstone-project)
