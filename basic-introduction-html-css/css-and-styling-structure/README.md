@@ -6,7 +6,7 @@ The web would be a boring place if all websites looked like that. Using CSS, you
 
 # Script
 
-In this lesson, we will learn about what CSS or Cascading Style Sheets is and how we can use it in our webpages.
+In this lesson, we will learn about, what CSS or Cascading Style Sheets is and how we can use it in our webpages.
 
 ### What is CSS?
 
