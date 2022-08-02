@@ -17,6 +17,8 @@ There are three different ways in which we can accomplish styling elements in an
 2. The second, we can add an ID to the element,
 3. And third, we can grab it by the class.
 
+So, in VS Code, let's try styling HTML elements using all of these three selectors.
+
 #### The CSS element Selector
 
 The element selector selects HTML elements based on the element name.
