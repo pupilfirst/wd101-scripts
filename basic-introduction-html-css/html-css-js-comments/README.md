@@ -1,6 +1,6 @@
 # Text
 
-In this lesson, we will learn how to add comments to our HTML web page. But, why we need comments in our code?
+In this lesson, we will learn how to add comments to our HTML web page. But, why do we need comments in our code?
 
 When we are doing a personal project, it is easy for us to think and understand the context of the code. If we keep aside the project for a few months, we might forget the reasons for many decisions.
 
