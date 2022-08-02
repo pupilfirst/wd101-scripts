@@ -4,11 +4,11 @@ To style different elements in our HTML page, first we have to find a way to ref
 Let's find out how to use these selectors.
 
 # Script 
-In this lesson, we are going to learn how to style different elements in our HTML page.
+In this lesson, you are going to learn, how to style different elements in our HTML page. You will learn what are CSS selectors & what are their different types. We will also look at examples to see how to work with selectors. So let’s get started.
 
-## CSS selectors
+## What are CSS selectors?
 
-A CSS selector is the first part of a CSS Rule. And, you've already seen a **selector** in the previous lesson, when we selected the **h1** element, to style it.
+A CSS selector is the first part of a CSS Rule. It lets you select individual elements in HTML. It selects HTML elements according to it’s ID, class and type.
 
 ### Types of selectors
 
@@ -74,3 +74,5 @@ And in case of `id`  selector, be mindful to use it. As Ids are mainly or tradit
 That's it, this is the difference between three different types of selectors, and how to use them to style your HTML elements. 
 
 See you in the next lesson.
+
+
