@@ -29,7 +29,9 @@ To make it clearer:
 
 ### Inheritance
 
-HTML uses parent-child relationships. A child element will usually inherit the characteristics of the parent element. For example, look at the following code.
+HTML uses parent-child relationships. A child element will usually inherit the characteristics of the parent element. 
+
+Let's see it in action in VS Code.
 
 > Action: Open VS Code
 ````
