@@ -50,7 +50,9 @@ There are two different Web Storage APIs available:
 
 ### Storing JSON objects
 
-The keys and values in web storage is of type string. If we need to save a JSON object to web storage, we first need to `stringify` it using `JSON.stringify` method.
+The keys and values in web storage can only be of `string` type. If we need to save a JSON object to web storage, we first need to convert it to string. To help us with that, JavaScript provides a built in `JSON.stringify` method.
+
+And to do the reverse, ie. convert a valid `JSON` string to JSON, we can use the `JSON.parse` method.
 
 ```js
 const userData = {
@@ -58,7 +60,7 @@ const userData = {
   themePreference: "Dark",
 };
 
-// convert JOSN Object to string representation
+// convert JSON Object to string representation
 const stringifiedUserData = JSON.stringify(userData);
 
 // save the data to localStorage
