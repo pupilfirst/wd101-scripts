@@ -1,51 +1,34 @@
 # Script
 
-In this video, we will look at various HTML elements available. Let's create a new HTML file and name it `page.html`
+In this lesson, we will look at various HTML elements that are available to us. We have already used a few of them to create our web page.
 
->Action: create a new HTML file and save it as page.html
+> Action: open the index.html from previous lesson.
 
+We have used `<h1>` element to display a header.
 
-In HTML, we use tags to construct a web page. For example, there is this element called `<h1>`.
+> Action: Highlight the usage of `h1`
 
->Action: Write `<h1> This is a heading </h1>`
-```html
-<h1>This is a heading </h1>
+We used the `<img>` element to embed an image. We used `<p>` tag to write normal text.
 
-```
+Now, let's see, what other elements are available to use.
 
-If you open the file in your browser, you can see that a heading is added to the web page.
+> Action: Open browser https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
->Action: switch back to the editor.
+You can see that there are lot of elements available. But we will focus on just two elements.
 
-If I hover over the tag, the editor gives me a nice little information about the tag. Let me click and open the Mozilla Developer Network (MDN) reference.
+To interact with the user and get an input, we can use the form `<input>` element. This element will render differently based on the `type` we provide. The input element can act as a `button`, `checkbox`, `date picker` etc.
 
->Action: open https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements in a new tab.
+> Action: highlight the examples and click on the running demo.
 
+To display some data to the user in a tabular format, HTML provides a `<table>` element. Table can have an optional header. Each row in the table is represented using a table row element `<tr>`. Each coloumn entry in a row is represented using table data cell element `<td>`.
 
-You can see that different heading tags are available. `<h1>` is a top-level heading. `<h2>` is slightly smaller. The size gets smaller with `<h3>` and `<h4>` and so on. Let's write and test these elements.
+> Action: open https://developer.mozilla.org/en-US/docs/Web/HTML/Element and highlight various HTML elements available.
 
->Action: Write text with `h1`, `h2`, `h3` and `h4` and compare the size.
+HTML elements are available for almost all of the use cases. We should make sure we use the right element based on the HTML standard.
 
-The size will differ with browsers as they come with different default style settings.
+See you in the next lesson
 
-To write a normal text, we can use the `<p>` tag.
-
-> Action: Write `<p>This is a paragraph with long content to explain something.</p>` Save and refresh the page.
-
-```html
-<p>This is a paragraph with long content to explain something.</p>
-```
-
-These are the basic HTML tags that we can use to display texts.
-
-HTML elements are available for almost all of the use cases. HTML comes with `<li>` and `<ul>` tags to display a list. There is an element `<a>` representing a link to another web page.
-
->Action: open https://developer.mozilla.org/en-US/docs/Web/HTML/Element and highlight various HTML elements available.
-
-You can see there are 100+ HTML elements available for us to work with. We should make sure we use the right element based on HTML standards.
-
-
-#Text
+# Text
 
 Every HTML document begins with an `<html>` tag. Every other elements must be descendents of this element. The content of a web page can be wrapped in `<body>` tag.
 
@@ -53,16 +36,41 @@ To include headings, HTML provides different header tags ranging from `<h1>` to 
 
 Normal text can be included in a web page using `<p>` element.
 
+We can use the `<table>` element to display data in tabular format. An optional header can be added to the table using `<thead>` element. Each row in the table is represented using `<tr>` element. To display data in a coloumn in a table row, we need to use `<td>`, the table data cell element.
+
 ```html
 <html>
   <head>
-    <title>This is my web page </title>
+    <title>This is my web page</title>
   </head>
   <body>
     <h1>This is a top level heading</h1>
     <h2>This is a sub heading</h2>
     <p>This is a normal text</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>fruit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Apple</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Orange</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
 ```
+
 MDN has an excellent reference on HTML elements at https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+MDN documentation on [Form input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+MDN documentation on [Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
