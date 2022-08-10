@@ -1,4 +1,4 @@
-# Text
+# Script
 We already know that **properties** are the most important part of any JavaScript object. They are the values associated with an object.
 
 Here, we will learn to add, update and delete properties of an Javascript Object.
