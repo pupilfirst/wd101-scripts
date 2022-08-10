@@ -12,19 +12,18 @@ In this lesson, we will create our first form using the HTML `form` element.
 
 ![Demo Form](sample_user_form.jpg)
 
-## Script
 
 First, let us create a `form` element as a wrapper for all the controls we build for this HTML Form.
 
-> Action: Open an editor and create a form element as below
+In the HTML page you have created, add a new form element as mentioned below.
 
-```js
+```html
 <form>#form controls</form>
 ```
 
 Next, let us create the controls one by one. We will start with the Name input field. It is a text-only input field, so we will create an input element of the type set to text. We will also create a `label` for all the input elements as per the design.
 
-```js
+```html
 
 <form>
    <label for="name">Name</label>
@@ -35,7 +34,7 @@ Next, let us create the controls one by one. We will start with the Name input f
 
 Next, we will create the email input field. It is an email-only input field, so we will create an input element of the type set to email.
 
-```js
+```html
 
 <form>
    <label for="email">Email</label>
@@ -46,7 +45,7 @@ Next, we will create the email input field. It is an email-only input field, so 
 
 Next, we will create the password input field. It is a password-only input field, so we will create an input element of the type set to password.
 
-```js
+```html
 
 <form>
    <label for="password">Password</label>
@@ -57,7 +56,7 @@ Next, we will create the password input field. It is a password-only input field
 
 Next, we will create the Date of birth input field. It is an input field which gives you the ability to pick a date using the date picker. We will use the input type as the date for this control.
 
-```js
+```html
 
 <form>
    <label for="dob">Date of Birth</label>
@@ -68,7 +67,7 @@ Next, we will create the Date of birth input field. It is an input field which g
 
 Next, we will create the 'Accept Terms & Conditions' checkbox. The input field of type `checkbox` is used to create one. Checkboxes are generally used to let a user select one or more options.
 
-```js
+```html
 
 <form>
    <input type="checkbox" id="acceptTerms" name="acceptTerms">
@@ -79,7 +78,7 @@ Next, we will create the 'Accept Terms & Conditions' checkbox. The input field o
 
 Finally, let's add a Submit button that lets the user send this data collected to a web server. We can create a button using the `button` element. The `type` attribute of the button is used to define the action associated with it. In our case, as we are creating a form to submit user data, we will use the type `submit`.
 
-```js
+```html
 <form>
   <button type="submit">Submit</button>
 </form>
@@ -87,7 +86,7 @@ Finally, let's add a Submit button that lets the user send this data collected t
 
 The final HTML for the form we created will look something like the one below:
 
-```js
+```html
 
 <form>
    <label for="name">Name</label>

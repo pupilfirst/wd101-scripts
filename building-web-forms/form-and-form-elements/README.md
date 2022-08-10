@@ -1,4 +1,4 @@
-# Script
+# Text
 
 In this lesson, we will learn about HTML Forms and using Form controls within them to collect user input on web pages.
 
@@ -6,9 +6,9 @@ The HTML `form` element helps to create an HTML form for user input. It is used 
 
 Let's create a `form` that can collect user data. This element wraps all the other elements that go inside our form.
 
-> Action: Open the HTML Document created previously and add a Form element as below.
+In the HTML document created earlier enter the following code.
 
-```js
+```html
 <form>## form elements</form>
 ```
 
