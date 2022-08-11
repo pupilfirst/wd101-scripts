@@ -21,13 +21,14 @@ This work is licensed under a
 
 ## L1. Welcome to the course!
 
-1. [Web Browsers](./introduction/web-browsers)
-2. [How to get help](./introduction/how-to-get-help)
-3. [Install Visual Studio Code](./introduction/installing-vscode)
-4. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
-5. [Install ESLint Plugin in VSCode](./introduction/setting-up-eslint)
-6. [Install Ubuntu in Windows, using WSL](./introduction/installing-ubuntu-linux-using-wsl)
-7. [Install Ubuntu in Windows, using Virtualbox](./introduction/installing-ubuntu-linux-using-virtualbox)
+1. Lessons on The Internet, Client & Server, IP address and URL are same as v1 Content is on Pupilfirst LMS.
+2. [Web Browsers](./introduction/web-browsers)
+3. [How to get help](./introduction/how-to-get-help)
+4. [Install Visual Studio Code](./introduction/installing-vscode)
+5. [Install Prettier Plugin in VSCode](./introduction/install-prettier-plugin-in-vscode)
+6. [Install ESLint Plugin in VSCode](./introduction/setting-up-eslint)
+7. [Install Ubuntu in Windows, using WSL](./introduction/installing-ubuntu-linux-using-wsl)
+8. [Install Ubuntu in Windows, using Virtualbox](./introduction/installing-ubuntu-linux-using-virtualbox)
 
 ## L2. Let's create our own websites!
 
