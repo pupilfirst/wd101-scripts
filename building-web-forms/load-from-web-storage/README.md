@@ -1,117 +1,199 @@
 # Script
 
-In this video, we will learn to save the data collected from the user form, in the browser itself, using the Web Storage APIs available in HTML5. Since we would like to persist the data even after the browser is closed, we should use `LocalStorage`.
+## Part - 1
 
-We are collecting `name`, `email`, `password`, and `date of birth` in our `user form`.
-We will now add a `save` button to save and persist these data to the LocalStorage.
+In this video, we will learn how to save data using `LocalStorage` API.
 
-> Action: Add a button with type submit to the user form.
+We currently have a form that collects few data like name, email etc. But we are not doing anything with it. We will save the data when the user clicks on the submit button.
 
-```html
-<button type="submit">Add</button>
-```
-
-Let's also add an `id` to the form to later reference it from JavaScript.
+Let's first add an `id` to the form so that we can refer it from JavaScript.
 
 ```html
 <form id="user-form">
-  <label
-    for="name"
-    class="text-md w-40 inline-block font-medium leading-5 text-gray-700"
-  >
-    Name
-  </label>
-
   <!-- .... -->
 </form>
 ```
 
-Now let's actually add the functionality to save the data. We will also display the details in a table once user submits the form.
+Now, let's actually add the functionality to save the data. Let's create an `index.js` file and link it with our HTML file. Next, we will get a reference to the form element.
 
-> Action: Switch to VS Code and write the following function. Explain we are using `getElementById` and `getElementsByName` selectors.
+```js
+let form = document.getElementById("user-form");
+```
+
+Next, we need to listen to the form submission event. We can do that by attaching a listener to the form, which will listen to the `submit` event.
+
+```js
+form.addEventListener("submit", saveUserForm);
+```
+
+We currently don't have the listener defined, let's just do that. The listener takes a single argument, an event. In our case, it will be the click event on the button.
+
+```js
+const saveUserForm = (event) => {};
+```
+
+The browser will submit the form when a submit button is clicked. We can prevent is by calling `preventDefault` on the generated event.
+
+```js
+const saveUserForm = (event) => {
+  event.preventDefault();
+};
+```
+
+Next, we will pull data from each form input elements. We will use the `document.getElementById` selector to select each element. Once we select an element, we can just use the `value` attirbute to get the entered data.
+
+```js
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
+const dob = document.getElementById("dob").value;
+```
+
+For checkbox, it would be `checked` attribute instead of `value`.
+
+```js
+const acceptTermsAndConditions = document.getElementById("acceptTerms").checked;
+```
+
+We will now create an entry object with these data.
+
+```js
+const entry = {
+  name: name,
+  email: email,
+  password: password,
+  dob: dob,
+  acceptTermsAndConditions: acceptTermsAndConditions,
+};
+```
+
+We can actually, simplify the object using ES6 shorthand notation.
+
+```js
+const entry = {
+  name,
+  email,
+  password,
+  dob,
+  acceptTermsAndConditions,
+};
+```
+
+Next, let's create an empty array to hold the entries.
 
 ```js
 let userEntries = [];
-const saveUserForm = (event) => {
-  event.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-  const dob = document.getElementById("dob").value;
-  const acceptTermsAndConditions =
-    document.getElementById("acceptTerms").checked;
-  const userDetails = {
-    name,
-    email,
-    password,
-    dob,
-    acceptTermsAndConditions,
-  };
-  userEntries.push(userDetails);
-  localStorage.setItem("user-entries", JSON.stringify(userEntries));
-};
-
-let form = document.getElementById("user-form");
-form.addEventListener("submit", saveUserForm, true);
 ```
 
-Now we need to invoke this function on the form submission. We will attach a handler to the form submission event and prevent the default behaviour from happening.
+Now, we can push the entry to our array.
 
-> Action: Click on save button. Open developer console and examine the localStorage data
+```js
+userEntries.push(userDetails);
+```
 
-Now, let's open the developer tools and head over to storage tab. We can see that, a new entry with key `user-entries` has been created.
+Localstorage only accepts `string` key and value. So, to save the data, we need to convert the user entries array to string. We can use `JSON.stringify` to do that.
 
-We can now try to display the data saved in localStorage.
+We will use the `setItem` method to save the data to localStorage.
 
-For that, let's first add a level 2 header and a `div` with id `user-entries`.
+```js
+localStorage.setItem("user-entries", JSON.stringify(userEntries));
+```
+
+Save the file and reload the web page.
+
+Let me open the developer console and navigate to `applications` tab. And select the `localStorage tab.` It is empty right now. Let's add some data and click the save button.
+
+Let me refresh the content, and as you can see, the data is saved into localstorage.
+
+## Part - 2
+
+In this video, we will display the entries that are saved in the localStorage, on our web page.
+
+For that, let's first add placeholder to display the data.
 
 > Action: Add a h2 and div tag`
 
 ```html
-<h2>Entries</h2>
-<div id="user-entries"></div>
+<div
+  class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10"
+>
+  <div class="mx-auto">
+    <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+    <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+  </div>
+</div>
 ```
 
-We can now add code to load the data from `localStorage`. First we will try to retrieve data from localStorage, if no entry is available, we will start with an empty array.
+We will display the data as a table in the `div` with the `id` `user-entries`.
+
+Let's work on loading the data from `localStorage`. Open the `index.js` file. We can write a function, `retrieveEntries` to load the saved data from localStorage.
 
 > Add the following code.
 
 ```js
-let userEntries = localStorage.getItem("user-entries");
-if (userEntries) {
-  userEntries = JSON.parse(userEntries);
-} else {
-  userEntries = [];
-}
+const retrieveEntries = () => {
+  let entries = localStorage.getItem("user-entries");
+  if (entries) {
+    entries = JSON.parse(entries);
+  } else {
+    entries = [];
+  }
+  return entries;
+};
 ```
 
-Next, we need to create a function that will display a table with entries.
+We retrieve data using the `getItem` method. It will return a valid string if an entry with key is present, else, it would return `null`. Let's handle that. Since we are storing `JSON` data, while retrieving, lets convert it back to `JSON` format using the `JSON.parse` method. If there is no entry for the key, lets initialize with an empty array.
+
+Next, we need to create a function that will display this data as a table. Let's create a function named `displayEntries`. We will fetch the entries from localStorage first.
+
+```js
+const savedUserEntries = retrieveEntries();
+```
+
+Next, we have to display this in a table.
+
+So, we will have to format the data like
+
+```js
+/*
+  <table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    ...
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>john@doe.com</td>
+    ...
+  </tr>
+</table>
+  */
+```
 
 ```js
 const displayEntries = () => {
-  const savedUserEntries = localStorage.getItem("user-entries");
-  let entries = "";
-  if (savedUserEntries) {
-    const parsedUserEntries = JSON.parse(savedUserEntries);
-    entries = parsedUserEntries
-      .map((entry) => {
-        const name = `<td>${entry.name}</td>`;
-        const email = `<td>${entry.email}</td>`;
-        const password = `<td>${entry.password}</td>`;
-        const dob = `<td>${entry.dob}</td>`;
-        const acceptTerms = `<td>${entry.acceptTermsAndConditions}</td>`;
-        const row = `<tr>${name} ${email} ${password} ${dob} ${acceptTerms}</tr>`;
-        return row;
-      })
-      .join("\n");
-  }
-  var table = `<table border='1' width='100%'><tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Password</th>
-      <th>dob</th>
-      <th>accepted terms?</th>
-    </tr>${entries} </table>`;
+  const savedUserEntries = retrieveEntries();
+  const tableEntries = savedUserEntries
+    .map((entry) => {
+      const nameCell = `<td class='border px-4 py-2'>${entry.name}</td>`;
+      const emailCell = `<td class='border px-4 py-2'>${entry.email}</td>`;
+      const passwordCell = `<td class='border px-4 py-2'>${entry.password}</td>`;
+      const dobCell = `<td class='border px-4 py-2'>${entry.dob}</td>`;
+      const acceptTermsCell = `<td class='border px-4 py-2'>${entry.acceptTermsAndConditions}</td>`;
+      const row = `<tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>`;
+      return row;
+    })
+    .join("\n");
+
+  const table = `<table class="table-auto w-full"><tr>
+
+  <th class="px-4 py-2">Name</th>
+  <th class="px-4 py-2">Email</th>
+  <th class="px-4 py-2">Password</th>
+  <th class="px-4 py-2">dob</th>
+  <th class="px-4 py-2">accepted terms?</th>
+</tr>${tableEntries} </table>`;
   let details = document.getElementById("user-entries");
   details.innerHTML = table;
 };
@@ -133,7 +215,7 @@ const saveUserForm = (event) => {
 };
 
 let form = document.getElementById("user-form");
-form.addEventListener("submit", saveUserForm, true);
+form.addEventListener("submit", saveUserForm);
 displayEntries();
 ```
 
@@ -141,7 +223,7 @@ displayEntries();
 
 Let's close the browser and open the file again.Now can see that the data is getting populated correctly.
 
-So in this lesson, we've learned, how to store and persist user data in client side (browser) using the localStorage API. We've also learned, to load the data stored from the localStorage, when needed.
+So in this lesson, we've learned, how to load data from localStorage and display it in our web page.
 
 # Text
 
