@@ -70,7 +70,7 @@ The lessons on `Arrays` are unchanged from v1 content and are available on Pupil
 ## L7. Functions
 
 Unchanged from v1. Content is on Pupilfirst LMS.
-## L8. Create a survey form with Validations
+## L8. Create a registration form with Validations
 
 1. [Why should you learn about the HTML Form element and Form data](./building-web-forms/why-html-forms)
 2. [First Steps with Forms and Form Elements](./building-web-forms/form-and-form-elements)
