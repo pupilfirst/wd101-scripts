@@ -27,6 +27,33 @@ It also means that, when a conflict arises between two styles, this order will c
 To make it clearer:
 - You must place **inline styles** in the `<body>` of the HTML document, and **internal stylesheets** must be placed in the <head> of the HTML document. So that, the inline styles will always be the last used ones and therefore they will take precedence.
 
+> Action: Open VS Code
+```html
+  <html>
+    <head>
+      <link rel="stylesheet" href="./style.css" />
+      <style>
+        p {
+          color: blue;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>CSS Styling overrides</h1>
+      <p style="color: green">
+        Hey we've learning CSS Cascading order.
+      </p>
+    </body>
+  </html>
+```
+
+In external style.css
+```css
+  p {
+    color: red;
+  }
+```
+
 ### Inheritance
 
 HTML uses parent-child relationships. A child element will usually inherit the characteristics of the parent element. For example, look at the following code.
