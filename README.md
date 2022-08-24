@@ -1,6 +1,6 @@
 # Script for WD101
 
-This repository contains the scripts for videos used in [the WD101 course, hosted at Pupilfirst School](https://www.pupilfirst.school/courses/1087/curriculum).
+This repository contains the scripts for videos used in [the WD101 course, hosted at Pupilfirst School](https://www.pupilfirst.school/courses/1802/curriculum).
 
 Note that this collection of scripts is incomplete - not all videos presented in the WD101 course have a corresponding script stored here.
 
@@ -44,9 +44,8 @@ Unchanged from v1. Content is on Pupilfirst LMS.
 6. [CSS classes and selectors](./basic-introduction-html-css/css-classes-and-selectors)
 7. [CSS styling overrides](./basic-introduction-html-css/css-styling-overrides)
 8. [Styling HTML using CSS files](./style-matters/styling-html-using-css-files)
-9.  [Putting HTML, CSS, and JS together](./basic-introduction-html-css/putting-together-html-css-js)
+9. [Putting HTML, CSS, and JS together](./basic-introduction-html-css/putting-together-html-css-js)
 10. [Adding comments to HTML, CSS, and JS](./basic-introduction-html-css/html-css-js-comments)
-
 
 ## L4. Style Matters
 
@@ -59,8 +58,10 @@ Unchanged from v1. Content is on Pupilfirst LMS.
 ## L5. Working with JavaScript data types
 
 Unchanged from v1. Content is on Pupilfirst LMS.
+
 ## L6. Basics of JavaScript data structures
-The lessons on `Arrays` are unchanged from v1 content and are available on Pupilfirst LMS. 
+
+The lessons on `Arrays` are unchanged from v1 content and are available on Pupilfirst LMS.
 
 1. [Creating and working with objects](./numbers-booleans-objects/creating-and-working-with-objects)
 2. [Add / update/ delete object properties](./numbers-booleans-objects/add-update-delete-objects)
@@ -70,6 +71,7 @@ The lessons on `Arrays` are unchanged from v1 content and are available on Pupil
 ## L7. Functions
 
 Unchanged from v1. Content is on Pupilfirst LMS.
+
 ## L8. Create a registration form with Validations
 
 1. [Why should you learn about the HTML Form element and Form data](./building-web-forms/why-html-forms)
