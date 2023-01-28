@@ -1,4 +1,6 @@
-So while you're going through this course, you might encounter situations where you get stuck for some reason.
+# How to get help
+
+While you're going through this course, you might encounter situations where you get stuck for some reason.
 
 1. Maybe you have some doubt about a topic that we've just discussed.
 2. Maybe you're having trouble setting up your developer environment.
@@ -16,27 +18,17 @@ So let's make it clear how you can get help in two parts:
 
 First, _where_ to ask questions, and second, _how_ to ask questions.
 
-## Where: Web Development community
+## Where: Pupilfirst School Discord Server
 
 Let's start with the first part - where to ask questions.
 
-> Show the user dashboard, highlighting the links mentioned below.
+> Show the Pupilfirst School Discord Server impersonating the _Verified_ user role.
 
-The _Web Development community_ within Pupilfirst School is the place to go if you need a coach or a teaching assistant to answer any question you have. You can access the community from your Dashboard - the link will be shown in the course card, or via the _Communities_ tab up top.
+The _Pupilfirst School Discord Server_ is the place to go if you need a coach or a teaching assistant to answer any question you have. You should already be a member of the Discord community; if you're accessing this course as an enrolled student, you would have been asked to join Discord prior to accessing course material.
 
-> Show the _Discuss_ tab of an example target.
+In the Discord server, `wd-forum` is where you should go to ask questions. This channel is great for asking longer, more detailed questions, and to get answers from coaches, or from your peers in a more organized manner.
 
-You can also browse questions that were asked previously about certain lessons via the _Discuss_ tab, that takes you to the community as well.
-
-> Show an example post in the community.
-
-## Community - think of it like a forum
-
-The community is structured as an online forum - it's an excellent space for asking longer, more detailed questions, and to get answers from coaches, or from your peers.
-
-## A note about the Discord server
-
-You might have noticed that we've sent you an invite to join a Discord Server. Discord is great for quick chats with other students who are also taking the course. But, if you have questions that you want answered by either coaches or teaching assistants, please create a post in the _Web Development_ community, not on Discord.
+`wd-chat` is an open text-chat area where you can have a quick conversation with others about web development. `wd-chat` can also be useful for getting your doubts answered, but if your question is complex, and might require several back and forth messages with others, we suggest using `wd-forum` instead. When in doubt about where to post, put your question in `wd-forum`.
 
 ## How to ask questions
 
