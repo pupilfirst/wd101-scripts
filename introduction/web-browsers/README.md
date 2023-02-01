@@ -3,8 +3,6 @@ We all use web browsers like Google Chrome, Mozilla Firefox and Microsoft Edge e
 
 Let's find out, what made the web browsers, one of the most used software application in today's world.
 
-# Script
-In this lesson, we're going to learn about **Web Browsers**, a common term which is frequently used by people while discussing the Internet. 
 
 ### What is web browser?
 
@@ -16,7 +14,6 @@ It's like a street address that tells your browser where to go on the Internet.
 
 When you type a URL into the browser's address bar and press Enter on your keyboard, the browser will load the page associated with that URL.
 
-> Open a browser to demonstrate this.
 
 It uses a piece of software called a **rendering engine** to translate that data into text and images. This data is written in **Hypertext Markup Language** (HTML) and web browsers read this code to create what we see, hear and experience on the internet.
 
