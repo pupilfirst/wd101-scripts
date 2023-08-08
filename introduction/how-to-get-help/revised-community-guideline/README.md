@@ -66,12 +66,12 @@ To ensure a positive and productive experience within the programming community,
 ## Resources for Cultivating Your Coding Community Involvement
 
 
-Remember community engagement is all about sharing, do not refrain from sharing whenever you come across something interesting, that might intrigue your fellow programmers.To start with consider exploring these resources that we would like to share with you: 
+Remember community engagement is all about sharing, do not refrain from sharing whenever you come across something interesting, that might intrigue your fellow programmers. To start with consider exploring these resources that we would like to share with you: 
 
 
-The Mythical Man-Month Book by Fred Brooks : An interesting read about software development, presenting some ideas about second-system effect and advocacy of prototyping.
+* The Mythical Man-Month Book by Fred Brooks : An interesting read about software development, presenting some ideas about second-system effect and advocacy of prototyping.
 
-[Some interesting project ideas for when you are done with our WD courses.](https://www.crio.do/projects/category/web-development-projects/)
+* [Some interesting project ideas for when you are done with our WD courses.](https://www.crio.do/projects/category/web-development-projects/)
 
 
 In your coding journey, remember that the programming community is your steadfast companion. Engage, collaborate, and share on the discord channel, and contribute to the community that will shape your path to success.
