@@ -7,7 +7,6 @@ As you embark on your journey in the landscape of programming, it's essential to
 
 Coding is an art which thrives on collaboration and shared knowledge. By immersing yourself in the programming community, you open doors to a world of collective expertise. Whether you're working on a complex algorithm or seeking guidance on best practices, the community is your go-to resource.
 
-
 The programming community facilitates:
 
 1. **Collaboration**: Bringing together diverse minds can lead to innovative solutions that an individual might not have considered.
@@ -22,7 +21,7 @@ The sense of community has a huge impact on human advancement. Here is a [TedX](
 At the heart of our community lies Discord, a versatile and powerful platform that enhances your coding experience in numerous ways:
 
 1. **Real-time Communication**: Discord provides an interactive space for instant discussions, allowing you to seek help and share insights without delay.
-2. **Dedicated Channels**: Organized channels for specific topics, projects, and interests enable focused conversations and knowledge sharing.
+2. **Dedicated Channels**: Organized channels for specific topics, projects, and interests enable focused conversations & knowledge sharing.
 3. **Support**: A support pipeline of dedicated staff, who are available to answer and offer a helping hand for all your questions and queries related to the course.
 4. **Network**: A network for communication with all the students and alumni taking our courses from across the country. Opening gates to conversations related to your programming stories and problems/solutions you have faced during your learning experience and a network of other developers.
 
