@@ -1,7 +1,7 @@
 # Thriving in Our Programming Community
 
 
-As you embark on your journey in the landscape of programming, it's essential to recognize that you're not alone. The vast programming community is here to support and enrich your experience every step of the way. Your achievement lies in the interconnected community that shapes it. In this article, we'll delve into the significance of engaging actively with the programming community and how it can improve your coding skills to new heights.
+As you embark on your journey in the landscape of programming, it's essential to recognize that you're not alone. The vast programming community is here to support and enrich your experience every step of the way. Your achievement lies in the interconnected community that shapes it. In this lesson, we'll delve into the significance of engaging actively with the programming community and how it can improve your coding skills to new heights.
 
 ## The Power of Programming Communities
 
@@ -32,6 +32,7 @@ Several open-source platforms serve as pillars of collaboration, enabling progra
 - **[GitHub](https://github.com)**: A hub for collaborative coding, version control, and open-source project hosting.
 - **[Stackoverflow](https://stackoverflow.com/)**: A platform that supports shared coding endeavors, fostering a strong developer community.
 
+
 ## Embracing the Coding Community Philosophy
 
 Engaging in the programming community requires adopting a set of principles that promote mutual growth and respect:
@@ -41,7 +42,16 @@ Engaging in the programming community requires adopting a set of principles that
 3. **Giving and Receiving**: Embrace mentorship and offer assistance to fellow programmers, fostering a culture of support.
 4. **Continuous Learning**: Develop a growth mindset by learning from peers and seeking constructive feedback.
 
+## Graduate attribute for Web development professionals
 
+While going through your web developpment courses, students will exposed to a range of attributes that are of highly valued in the programming community across the globe. And are some important aspects for the web development professionals. It is important that you take note of these values and focus to build up on these skills as you approach your professional path in the area of web development. Use the discord community and intiate conversations about these topics with your fellow learners.
+
+1. **Comprehensive Web skills** : Develop mastery in HTML,CSS & JS, and other web technologies, enabling you to develop complex and responsive web solutions. 
+2. **Full-stack proficiency** : Acquire front-end and back-end expertise, integrating databases and APIs to build complete web applications.
+3. **Problem-Solving Mastery** : Analyze and practise complex technical issues, enhancing your ability to created optimized solutions. 
+4. **Effective Collaboration** : Utilize Git for version control and teamwork, communicating and contributing effectively within development groups.
+5.**User-Focused Design**: Learn about UI/UX and design principles and understant the importance of catering intelligent user interfaces. 
+6. **Security and Ethical Awareness** : Learn about security measures, prioritizing data privacy, and adhere to ethical standards while showcasing professionalism and accountability.
 
 
 
