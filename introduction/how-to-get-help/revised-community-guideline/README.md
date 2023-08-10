@@ -44,7 +44,7 @@ Engaging in the programming community requires adopting a set of principles that
 
 ## Graduate attribute for Web development professionals
 
-While going through your web developpment courses, students will exposed to a range of attributes that are of highly valued in the programming community across the globe. And are some important aspects for the web development professionals. It is important that you take note of these values and focus to build up on these skills as you approach your professional path in the area of web development. Use the discord community and intiate conversations about these topics with your fellow learners.
+While going through your web developpment courses, students will be exposed to a range of attributes that are of highly valued in the programming community across the globe. And are some necessary aspects for the web development professionals. It is important that you take note of these values and focus to build up on these skills as you approach your professional path in the area of web development. Use the discord community and intiate conversations about these topics with your fellow learners.
 
 1. **Comprehensive Web skills** : Develop mastery in HTML,CSS & JS, and other web technologies, enabling you to develop complex and responsive web solutions. 
 2. **Full-stack proficiency** : Acquire front-end and back-end expertise, integrating databases and APIs to build complete web applications.
@@ -53,6 +53,7 @@ While going through your web developpment courses, students will exposed to a ra
 5.**User-Focused Design**: Learn about UI/UX and design principles and understant the importance of catering intelligent user interfaces. 
 6. **Security and Ethical Awareness** : Learn about security measures, prioritizing data privacy, and adhere to ethical standards while showcasing professionalism and accountability.
 
+_Here is a [reference link](https://www.ugc.gov.in/e-book/locf/mobile/index.html#p=7), go to page number 6 to read more about graduate attributes._
 
 
 ## Behavioral Rules and Standards
