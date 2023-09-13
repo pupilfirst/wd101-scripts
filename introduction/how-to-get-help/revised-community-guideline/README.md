@@ -1,6 +1,5 @@
 # Thriving in Our Programming Community
 
-
 As you embark on your journey in the landscape of programming, it's essential to recognize that you're not alone. The vast programming community is here to support and enrich your experience every step of the way. Your achievement lies in the interconnected community that shapes it. In this lesson, we'll delve into the significance of engaging actively with the programming community and how it can improve your coding skills to new heights.
 
 ## The Power of Programming Communities
@@ -53,7 +52,7 @@ While going through your web developpment courses, students will be exposed to a
 5.**User-Focused Design**: Learn about UI/UX and design principles and understant the importance of catering intelligent user interfaces. 
 6. **Security and Ethical Awareness** : Learn about security measures, prioritizing data privacy, and adhere to ethical standards while showcasing professionalism and accountability.
 
-_Here is a [reference link](https://www.ugc.gov.in/e-book/locf/mobile/index.html#p=7), go to page number 6 to read more about graduate attributes._
+Here is a [reference link](https://www.ugc.gov.in/e-book/locf/mobile/index.html#p=7), go to page number 6 to read more about graduate attributes._
 
 
 ## Behavioral Rules and Standards
