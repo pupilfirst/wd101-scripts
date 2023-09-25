@@ -1,0 +1,1 @@
+Before we get started with programming in earnest, let's have some fun and create our own websites!

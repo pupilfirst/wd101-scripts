@@ -1,0 +1,1 @@
+Let's begin using Visual Studio Code by installing the _Prettier_ extension. Prettier helps keep our code _pretty_ (hence the name).
