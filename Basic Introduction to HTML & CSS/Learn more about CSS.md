@@ -1,3 +1,5 @@
+# More about CSS
+
 Are you interested to learn more about what you've seen in the previous lesson? Want to learn how to write custom CSS of your own?
 
 Unfortunately, we don't have the time to dig deeper into CSS in _this_ course. However, we think that the best way to learn CSS is by _experimenting_ with it.

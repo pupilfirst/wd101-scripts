@@ -1,0 +1,1 @@
+Here you'll learn how to compare two different strings and figure out if they are the same or not.

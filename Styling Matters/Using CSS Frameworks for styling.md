@@ -1,13 +1,10 @@
-# Text
+# Using CSS framework
 
-Previously, we've learned 
-- *What is a CSS framework?* 
-- *What are the advantages of using one?*
-- And *what are the popular frameworks available in the market today?*.
+In previous lessons, we delved into the concept of CSS frameworks, explored their advantages, and discussed the popular frameworks available in today's market. We also explored how CSS frameworks can enhance our productivity by offering a range of pre-designed UI components and utility classes.
 
-We've also talked about how a CSS framework can boost our productivity, with it's ready-to-use UI components and utility classes.
+In this lesson, our focus will be on the practical aspect: how to integrate a CSS framework into an HTML project.
 
-So, in this lesson, let's find out how to use a CSS framework.
+There are various methods to incorporate a CSS framework into a web application, but for the sake of convenience, we'll concentrate on the most straightforward approaches.
 
 ## How to add a CSS framework to any HTML project?
 There are number of different ways to use a CSS framework in a web application. In this lesson, we will focus only on the most convenient ones.

@@ -1,0 +1,1 @@
+You'll learn how to use arrays as a container for a collection of JavaScript values.

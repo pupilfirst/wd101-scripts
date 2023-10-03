@@ -1,3 +1,5 @@
+# Intro to Tailwind
+
 In this course, we're not going into detail about everything that you can do with CSS.
 
 CSS is a very large and complex topic that deserves a separate course of its own.

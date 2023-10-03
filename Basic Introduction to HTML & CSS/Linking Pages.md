@@ -1,10 +1,10 @@
 In this lesson, we will learn about linking external pages and internal elements to our web pages.
 
-## Linking external pages and internal elements to our web pages
+# Linking external pages and internal elements to our web pages
 
 The `a` HTML element (or *anchor* element), with its `href` attribute, creates a hyperlink to web pages, files, email addresses, locations on the same page, or anything else a URL can address.
 
-### External Links
+## External Links
 
 You can use the `a` (anchor) element to link to content outside your web page.
 
@@ -16,7 +16,7 @@ The `a` element needs a destination web address specified using the `href` attri
 
 When you open this HTML page on your browser, it will display the text `This links to Google` as a link you can click. And if we click on the link, it will take us to `https://www.google.com`.
 
-### Internal Links
+## Internal Links
 
 `a` (anchor) elements can also create internal links to jump to different sections within a webpage.
 

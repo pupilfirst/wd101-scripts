@@ -1,4 +1,6 @@
-Here's a whirlwind tour of how we can use some of Tailwind's features to make a web page look better. This video will also tell you where to go to [learn more about Tailwind](https://tailwindcss.com/docs).
+# Working with Tailwind
+
+This concise overview provides a glimpse into the effective utilization of Tailwind CSS features to enhance the visual appeal of a web page. Additionally, you can access the comprehensive Tailwind CSS documentation at https://tailwindcss.com/docs for in-depth learning
 
 ** Video **
 
