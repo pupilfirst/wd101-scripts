@@ -1,0 +1,1 @@
+You'll learn how to split text into different string values based on a repeating pattern. This is the opposite of joining where multiple strings are combined or concatenated into a single string. Here we split an existing string into multiple strings.

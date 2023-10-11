@@ -1,0 +1,1 @@
+`console.log` is a function you have used numerous times by now. At the end of this lesson you will have learned how to write your own functions.
