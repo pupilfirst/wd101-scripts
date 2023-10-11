@@ -1,61 +1,38 @@
-<!---
-Suggestion: Can we add this vieo < https://www.youtube.com/watch?v=fyOSkkQK14w > OR this < https://www.youtube.com/watch?v=DuSURHrZG6I > to the lesson
---->
+We all use web browsers like Google Chrome, Mozilla Firefox and Microsoft Edge every day, but do we understand what they are? 
 
-## IP Address
+Let's find out, what made the web browsers, one of the most used software application in today's world.
 
-Just as every house is assigned a specific and unique postal address, all computers connected to the Internet are also assigned an _IP Address_. IP stands for **I**nternet **P**rotocol.
+### What is web browser?
 
-There are two kinds of IP addresses: _IPv4_ and _IPv6_.
+A **Web Browser** is nothing but a software application, which is used to access the information available on the internet. When a user like you and me requests some information, the web browser fetches the data from a web server and then displays the response on your desktop or mobile device. The information is transferred using the **Hypertext Transfer Protocol (HTTP)**, which defines how text, images and video are transmitted on the web.
 
-An example of an IPV4 address looks like a combination of 4 numbers: 
+### How does a web browser work?
+Every webpage, image and video available on the internet, has its own unique Uniform Resource Locator (URL). You've already learned about **URL** in the previous video.
+It's like a street address that tells your browser where to go on the Internet.
 
-```
-142.250.76.46
-```
+When you type a URL into the browser's address bar and press `Enter` on your keyboard, the browser will load the page associated with that URL.
 
-**IPv4** is the older version which allows for a maximum of around *4.3 billion* IP addresses. Each of those four numbers (segment) represents 8 _bits_ of information. That means one segment can count as high as 255.
+It uses a piece of software called a **rendering engine** to translate that data into text and images. This data is written in **Hypertext Markup Language** (HTML) and web browsers read this code to create what we see, hear and experience on the internet.
 
-While 4.3 billion might sound like a lot of addresses, it isn't anywhere near enough to satisfy today's numbers of devices connected to the internet. To satisfy the need for _addressing_ the ever-growing number internet users and devices, a new **IPv6** version was created that can provide _many more_ addresses.
+### History of the web browser
+The first web browser, **WorldWideWeb** was created in the year of 1990 by Tim Berners-Lee. 
+Though, it was completely different from the World Wide Web we use today.
 
-An example of a _full_ IPv6 IP address would be:
+In 1993, a new browser Mosaic was revealed by Mark Andressen and their team. It was the first browser to display text and images at a time on the device screen. 
+Later in 1994, he also created another browser called, **Netscape**. 
 
-```
-2001:0db8:0000:0000:0000:ff00:0042:8329
-```
+Microsoft launched their Internet Explorer in 1995, and soon it became the most popular web browser.
 
-Notice how the IPv6 address is much longer than IPv4? It greatly increases the available address space.
+In later years, modern browsers like Mozilla Firefox, Google Chrome, Apple Safari came to market.
 
-How much more? 
+### Website Cookies
+Websites save information about you in certain files called **cookies**. 
+Cookie gets saved on your computer for the next time you visit that site. Upon your return, the website code will read that cookie to see that it’s you. 
 
-```
-340,282,366,920,938,463,463,374,607,431,768,211,456 addresses
-```
+For example, when you go to a website, the page remembers your username and password – that’s made possible by a cookie.
+Some cookies are used to remember our interests, our browsing patterns, etc. Websites show us ads based on our interests, using cookies. 
 
-That's approximately 3.4×10^38^. That's a lot - we're not going to need another version of IP addresses for a long while (if ever).
+### Conclusion
+Browsers also does other things like, it keeps your personal information secure and check sites for viruses. It also keeps tracks of sites you've visited and keeps relevant information in its cache. So, the next time you request those same websites, they will load up faster because there's fewer data to download and update the cached version.
 
-> **Do you want to know what your IP address is?**
->
-> The simplest way to discover your current IP address is by typing "What is my IP" in Google search. Google will display your IP address at the top of the search results page.
-
-## Domain Names
-
-Since IP addresses are unique, they are useful for computers to connect with each other, but we humans have a difficult time reading them, or remembering them.
-
-**Domains** associate an IP address like ```142.250.76.46``` with a string of text like `google.com`. Thanks to the [**D**omain **N**ame **S**ystem](https://www.cloudflare.com/learning/dns/what-is-dns/) (DNS), both are interchangeable. You can go to http://142.250.76.46 or http://google.com and end up on the exact same website.
-
-When you type in a domain name into your browser's address bar, your browser contacts the DNS to figure out its IP address, and then uses _that_ to actually contact the server that belongs to the domain.
-
-In short, a domain name is a unique, easy-to-remember address used to access websites.
-
-## What's a URL?
-
-**URL** stands for _Uniform Resource Locator_, it's simply a web address that uniquely identifies a specific resource in the computer network or the Internet.
-
-For example, the current page’s URL is `https://www.pupilfirst.school/targets/12078`, and it can be divided in 3 parts:
-
-- ```https://``` is the protocol.
-- ```www.pupilfirst.school``` is the domain.
-- ```/targets/12078``` is the path to a _resource_.
-
-Watch the video below to learn more about how networks talk to each other, and how the Internet works.
+That's it for this lesson, see you in the next one.
